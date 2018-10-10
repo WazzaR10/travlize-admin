@@ -1320,7 +1320,10 @@ a.dropdown-toggle::after {
 }
 .attraction-action button{
     border: none;
+    
+    
 }
+
 .form-modified .bootstrap-select .dropdown-toggle .filter-option-inner-inner{
     color: #6c757d;
 }
@@ -1373,13 +1376,27 @@ a.dropdown-toggle::after {
     outline: none;
     padding: 15px;
     background-color: #fff;
+    border-radius:5px; 
 }
 .includes-list p{
     
-    
+    padding-left: 15px;
+    line-height: 26px;
    margin-bottom: 0;
     color: #6c757d;
     
+}
+.includes-list p:before{
+    content: '\f00c';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    left: 0;
+}
+.excludes .includes-list p:before{
+    content: "\f00d";
 }
 .includes-list .list-group-item:before{
     content: '-';
@@ -1387,7 +1404,11 @@ a.dropdown-toggle::after {
 }
 .includes-list-item{
     border-bottom: 1px solid #e9ecef;
-    padding:15px 0;
+    padding:15px;
+    
+}
+.includes-list-item:last-child{
+    border-bottom: none;
 }
 .includes-list button i{
     color: #63cac5;
@@ -1395,14 +1416,25 @@ a.dropdown-toggle::after {
     -webkit-transition: .3s all linear;
     -moz-transition: .3s all linear;
 }
+.includes-action{
+    display: flex;
+    justify-content: flex-end;
+}
 .includes-action button{
     background-color: #e9ecef;
     transition: .3s all linear;
     -webkit-transition: .3s all linear;
     -moz-transition: .3s all linear;
+    margin-left: 15px;
+    border-radius:50%;
+    width: 40px;
+    height: 40px;
 }
 .includes-action button:hover{
     background-color: #63cac5;
+    webkit-box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
+    -moz-box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
+    box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
 }
 .includes-action button:hover i{
     color: #fff;
