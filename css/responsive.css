@@ -18,7 +18,7 @@
     }
 
     #page-content-wrapper {
-        padding: 45px 30px;
+        padding: 25px;
         position: relative;
     }
 
@@ -27,7 +27,7 @@
         margin-right: 0;
     }
     .breadcrumb-block{
-        margin-bottom: 30px;
+        margin-bottom: 25px;
     }
 }
 @media(min-width:992px) {

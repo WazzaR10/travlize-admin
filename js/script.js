@@ -9,27 +9,34 @@ $(document).ready(function () {
           image: 'img.bg-stretch'
         });
       });
-    // var maxField = 10; //Input fields increment limitation
-    // var addButton = $('.add_button'); //Add button selector
-    // var wrapper = $('.field_wrapper'); //Input field wrapper
-    // var fieldHTML = '<label for="inputPassword" class="col-sm-2 col-form-label">Itinerary</label><div class="col-sm-8"><div class="input-group"><input type="text" class="form-control mb-3" placeholder="Itinerary title (eg.Kathmandu to Lukla flight)" aria-label="Username" aria-describedby="basic-addon1"><textarea name="" id="" rows="5" class="w-100" placeholder="Itinerary description"></textarea></div></div><div class="col-sm-2"><button type="button" class="default-btn btn-block remove_button"><i class="fas fa-plus"></i> Remove</button></div>'; //New input field html 
-    // var x = 1; //Initial field counter is 1
+
+      $(document).ready(function() {
+        $('.js-example-basic-multiple').select2({
+            placeholder:"Select destinations covered by this trek"
+        });
+        $('.selectpicker').selectpicker();
+    });
+//     var maxField = 10; //Input fields increment limitation
+//     var addButton = $('.add_button'); //Add button selector
+//     var wrapper = $('.field_wrapper'); //Input field wrapper
+//     var fieldHTML = '<label for="inputPassword" class="col-sm-2 col-form-label">Itinerary</label><div class="col-sm-8"><div class="input-group"><input type="text" class="form-control mb-3" placeholder="Itinerary title (eg.Kathmandu to Lukla flight)" aria-label="Username" aria-describedby="basic-addon1"><textarea name="" id="" rows="5" class="w-100" placeholder="Itinerary description"></textarea></div></div><div class="col-sm-2"><button type="button" class="default-btn btn-block remove_button"><i class="fas fa-plus"></i> Remove</button></div>'; //New input field html 
+//     var x = 1; //Initial field counter is 1
     
-    // //Once add button is clicked
-    // $(addButton).click(function(){
-    //     //Check maximum number of input fields
-    //     if(x < maxField){ 
-    //         x++; //Increment field counter
-    //         $(wrapper).append(fieldHTML); //Add field html
-    //     }
-    // });
+//     //Once add button is clicked
+//     $(addButton).click(function(){
+//         //Check maximum number of input fields
+//         if(x < maxField){ 
+//             x++; //Increment field counter
+//             $(wrapper).append(fieldHTML); //Add field html
+//         }
+//     });
     
-    // //Once remove button is clicked
-    // $(wrapper).on('click', '.remove_button', function(e){
-    //     e.preventDefault();
-    //     $('.field_wrapper').remove(); //Remove field html
-    //     x--; //Decrement field counter
-    // });
+//     //Once remove button is clicked
+//     $(wrapper).on('click', '.remove_button', function(e){
+//         e.preventDefault();
+//         $('.field_wrapper').remove(); //Remove field html
+//         x--; //Decrement field counter
+//     });
    
 //     var ctx = document.getElementById("myChart");
 // var myChart = new Chart(ctx, {
@@ -81,9 +88,10 @@ $(document).ready(function () {
 //     }
 // });
 
-$(document).ready(function() {
-    $('#example').DataTable( {
-        "order": [[ 3, "desc" ]]
-    } );
-} );
+// $(document).ready(function() {
+//     $('#example').DataTable( {
+//         "order": [[ 3, "desc" ]]
+//     } );
+// } );
+
 });
