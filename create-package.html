@@ -94,11 +94,11 @@
                                     <img src="img/user.jpg" alt=""> Hey,John
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="my-profile.html">Profile</a>
-                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#changepassword">Change
+                                    <a class="dropdown-item" href="my-profile.html"><i class="fas fa-user"></i> Profile</a>
+                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#changepassword"><i class="fas fa-key"></i> Change
                                         password</a>
 
-                                    <a class="dropdown-item" href="#">Logout</a>
+                                    <a class="dropdown-item" href="#"><i class="fas fa-power-off"></i> Logout</a>
                                 </div>
                             </li>
                         </ul>
@@ -120,7 +120,7 @@
                         <li class="breadcrumb-item">
                             <a href="#">Home</a>
                         </li>
-                        <li class="breadcrumb-item active" aria-current="page">Manage package</li>
+                        <li class="breadcrumb-item active" aria-current="page">Create package</li>
                     </ol>
                 </nav>
             </div>
@@ -186,6 +186,11 @@
                                     <a class="nav-link" id="contact-tab" data-toggle="tab" href="#prebooking" role="tab"
                                         aria-controls="contact" aria-selected="false"><i class="fas fa-check"></i>
                                         Pre-booking</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#reviews" role="tab"
+                                        aria-controls="contact" aria-selected="false"><i class="fas fa-user"></i>
+                                        Reviews</a>
                                 </li>
                             </ul>
                         </div>
@@ -375,18 +380,19 @@
                                                     </div>
                                                 </div>
 
-
-
-                                            </div>
-
-                                            <div class="content-block">
-                                                <div class="row">
-                                                    <div class="col-md-10 offset-md-2">
-                                                        <button class="btn default-btn save-btn" type="submit">Save</button>
+                                                <div class="content-block">
+                                                    <div class="row">
+                                                        <div class="col-md-10 offset-md-2">
+                                                            <button class="btn default-btn save-btn" type="submit">Save</button>
+                                                        </div>
                                                     </div>
+
                                                 </div>
 
+
                                             </div>
+
+
                                         </form>
                                     </div>
                                 </div>
@@ -618,8 +624,8 @@
                                                             </form>
                                                         </div>
                                                         <div class="col-md-2">
-                                                            <a class="btn btn-sm add-btn" href="#" role="button"><i
-                                                                    class="fas fa-plus"></i>
+                                                            <a class="btn btn-sm add-btn" href="#" role="button"
+                                                                data-toggle="modal" data-target="#addSegment"><i class="fas fa-plus"></i>
                                                                 Add segment
                                                             </a>
                                                         </div>
@@ -669,76 +675,84 @@
                                                                     <div class="includes-list-item">
                                                                         <div class="row">
                                                                             <div class="col-lg-9">
-                                                                                <p>Daily seasonal fresh fruits as per the availability</p>
+                                                                                <p>Daily seasonal fresh fruits as per
+                                                                                    the availability</p>
                                                                             </div>
                                                                             <div class="col-lg-3">
-                                                                                    <div class="includes-action">
-                                                                                           
-                                                                                            <button type="button" class="btn">
-                                                                                                <i class="fas fa-pen"></i>
-                                                                                            </button>
-                                                                                            <button type="button" class="btn">
-                                                                                                <i class="fas fa-trash-alt"></i>
-                                                                                            </button>
-                                                                                        </div>
+                                                                                <div class="includes-action">
+
+                                                                                    <button type="button" class="btn">
+                                                                                        <i class="fas fa-pen"></i>
+                                                                                    </button>
+                                                                                    <button type="button" class="btn">
+                                                                                        <i class="fas fa-trash-alt"></i>
+                                                                                    </button>
+                                                                                </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                     <div class="includes-list-item">
-                                                                            <div class="row">
-                                                                                <div class="col-lg-9">
-                                                                                    <p>Necessary paper works, all government and local taxes</p>
-                                                                                </div>
-                                                                                <div class="col-lg-3">
-                                                                                        <div class="includes-action">
-                                                                                               
-                                                                                                <button type="button" class="btn">
-                                                                                                    <i class="fas fa-pen"></i>
-                                                                                                </button>
-                                                                                                <button type="button" class="btn">
-                                                                                                    <i class="fas fa-trash-alt"></i>
-                                                                                                </button>
-                                                                                            </div>
+                                                                        <div class="row">
+                                                                            <div class="col-lg-9">
+                                                                                <p>Necessary paper works, all
+                                                                                    government and local taxes</p>
+                                                                            </div>
+                                                                            <div class="col-lg-3">
+                                                                                <div class="includes-action">
+
+                                                                                    <button type="button" class="btn">
+                                                                                        <i class="fas fa-pen"></i>
+                                                                                    </button>
+                                                                                    <button type="button" class="btn">
+                                                                                        <i class="fas fa-trash-alt"></i>
+                                                                                    </button>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="includes-list-item">
-                                                                                <div class="row">
-                                                                                    <div class="col-lg-9">
-                                                                                        <p>Airport pickup and drop-off (on request) services in a private vehicle</p>
-                                                                                    </div>
-                                                                                    <div class="col-lg-3">
-                                                                                            <div class="includes-action">
-                                                                                                    
-                                                                                                    <button type="button" class="btn">
-                                                                                                        <i class="fas fa-pen"></i>
-                                                                                                    </button>
-                                                                                                    <button type="button" class="btn">
-                                                                                                        <i class="fas fa-trash-alt"></i>
-                                                                                                    </button>
-                                                                                                </div>
-                                                                                    </div>
+                                                                    </div>
+                                                                    <div class="includes-list-item">
+                                                                        <div class="row">
+                                                                            <div class="col-lg-9">
+                                                                                <p>Airport pickup and drop-off (on
+                                                                                    request) services in a private
+                                                                                    vehicle</p>
+                                                                            </div>
+                                                                            <div class="col-lg-3">
+                                                                                <div class="includes-action">
+
+                                                                                    <button type="button" class="btn">
+                                                                                        <i class="fas fa-pen"></i>
+                                                                                    </button>
+                                                                                    <button type="button" class="btn">
+                                                                                        <i class="fas fa-trash-alt"></i>
+                                                                                    </button>
                                                                                 </div>
                                                                             </div>
+                                                                        </div>
+                                                                    </div>
 
-                                                                            <div class="includes-list-item">
-                                                                                    <div class="row">
-                                                                                        <div class="col-lg-9">
-                                                                                            <p>Down jackets, sleeping bags and duffel bags (down jackets, sleeping bags and duffel bags are to be returned after the completion of the trip</p>
-                                                                                        </div>
-                                                                                        <div class="col-lg-3">
-                                                                                                <div class="includes-action">
-                                                                                                        
-                                                                                                        <button type="button" class="btn">
-                                                                                                            <i class="fas fa-pen"></i>
-                                                                                                        </button>
-                                                                                                        <button type="button" class="btn">
-                                                                                                            <i class="fas fa-trash-alt"></i>
-                                                                                                        </button>
-                                                                                                    </div>
-                                                                                        </div>
-                                                                                    </div>
+                                                                    <div class="includes-list-item">
+                                                                        <div class="row">
+                                                                            <div class="col-lg-9">
+                                                                                <p>Down jackets, sleeping bags and
+                                                                                    duffel bags (down jackets, sleeping
+                                                                                    bags and duffel bags are to be
+                                                                                    returned after the completion of
+                                                                                    the trip</p>
+                                                                            </div>
+                                                                            <div class="col-lg-3">
+                                                                                <div class="includes-action">
+
+                                                                                    <button type="button" class="btn">
+                                                                                        <i class="fas fa-pen"></i>
+                                                                                    </button>
+                                                                                    <button type="button" class="btn">
+                                                                                        <i class="fas fa-trash-alt"></i>
+                                                                                    </button>
                                                                                 </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
 
                                                             </div>
@@ -761,20 +775,20 @@
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="excludes" role="tabpanel" aria-labelledby="excludes-tab">
-                                    <div class="container-fluid">
-                                            <div class="content-block">
-                                                <div class="row align-content-center">
-                                                    <div class="col-md-10">
-                                                        <form>
-                                                            <div class="form-modified">
-                                                                <div class="form-group row">
-        
-                                                                    <label for="staticEmail" class="col-sm-2 col-form-label">
-                                                                        Excludes</label>
-                                                                    <div class="col-sm-10">
-                                                                        <textarea name="" id="" placeholder="eg. Necessary paperworks and all government papers."></textarea>
-                                                                    </div>
-                                                                    <!-- <div class="col-sm-2">
+                                <div class="container-fluid">
+                                    <div class="content-block">
+                                        <div class="row align-content-center">
+                                            <div class="col-md-10">
+                                                <form>
+                                                    <div class="form-modified">
+                                                        <div class="form-group row">
+
+                                                            <label for="staticEmail" class="col-sm-2 col-form-label">
+                                                                Excludes</label>
+                                                            <div class="col-sm-10">
+                                                                <textarea name="" id="" placeholder="eg. Necessary paperworks and all government papers."></textarea>
+                                                            </div>
+                                                            <!-- <div class="col-sm-2">
                                                                         <select class="selectpicker">
                                                                             <option selected="">Select icon</option>
                                                                             <option value="1" data-icon="glyphicon-picture">
@@ -787,111 +801,872 @@
                                                                             <option value="3">Private tours</option>
                                                                         </select>
                                                                     </div> -->
-                                                                </div>
-        
-                                                                <div class="form-group row">
-                                                                    <div class="col-sm-10 offset-2">
-                                                                        <div class="excludes">
-                                                                                <div class="includes-list">
-                                                                                        <div class="includes-list-item">
-                                                                                            <div class="row">
-                                                                                                <div class="col-lg-9">
-                                                                                                    <p>Daily seasonal fresh fruits as per the availability</p>
-                                                                                                </div>
-                                                                                                <div class="col-lg-3">
-                                                                                                        <div class="includes-action">
-                                                                                                               
-                                                                                                                <button type="button" class="btn">
-                                                                                                                    <i class="fas fa-pen"></i>
-                                                                                                                </button>
-                                                                                                                <button type="button" class="btn">
-                                                                                                                    <i class="fas fa-trash-alt"></i>
-                                                                                                                </button>
-                                                                                                            </div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div class="includes-list-item">
-                                                                                                <div class="row">
-                                                                                                    <div class="col-lg-9">
-                                                                                                        <p>Necessary paper works, all government and local taxes</p>
-                                                                                                    </div>
-                                                                                                    <div class="col-lg-3">
-                                                                                                            <div class="includes-action">
-                                                                                                                   
-                                                                                                                    <button type="button" class="btn">
-                                                                                                                        <i class="fas fa-pen"></i>
-                                                                                                                    </button>
-                                                                                                                    <button type="button" class="btn">
-                                                                                                                        <i class="fas fa-trash-alt"></i>
-                                                                                                                    </button>
-                                                                                                                </div>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                            <div class="includes-list-item">
-                                                                                                    <div class="row">
-                                                                                                        <div class="col-lg-9">
-                                                                                                            <p>Airport pickup and drop-off (on request) services in a private vehicle</p>
-                                                                                                        </div>
-                                                                                                        <div class="col-lg-3">
-                                                                                                                <div class="includes-action">
-                                                                                                                        
-                                                                                                                        <button type="button" class="btn">
-                                                                                                                            <i class="fas fa-pen"></i>
-                                                                                                                        </button>
-                                                                                                                        <button type="button" class="btn">
-                                                                                                                            <i class="fas fa-trash-alt"></i>
-                                                                                                                        </button>
-                                                                                                                    </div>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </div>
-                    
-                                                                                                <div class="includes-list-item">
-                                                                                                        <div class="row">
-                                                                                                            <div class="col-lg-9">
-                                                                                                                <p>Down jackets, sleeping bags and duffel bags (down jackets, sleeping bags and duffel bags are to be returned after the completion of the trip</p>
-                                                                                                            </div>
-                                                                                                            <div class="col-lg-3">
-                                                                                                                    <div class="includes-action">
-                                                                                                                            
-                                                                                                                            <button type="button" class="btn">
-                                                                                                                                <i class="fas fa-pen"></i>
-                                                                                                                            </button>
-                                                                                                                            <button type="button" class="btn">
-                                                                                                                                <i class="fas fa-trash-alt"></i>
-                                                                                                                            </button>
-                                                                                                                        </div>
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                    </div>
+                                                        </div>
+
+                                                        <div class="form-group row">
+                                                            <div class="col-sm-10 offset-2">
+                                                                <div class="excludes">
+                                                                    <div class="includes-list">
+                                                                        <div class="includes-list-item">
+                                                                            <div class="row">
+                                                                                <div class="col-lg-9">
+                                                                                    <p>Daily seasonal fresh fruits as
+                                                                                        per the availability</p>
+                                                                                </div>
+                                                                                <div class="col-lg-3">
+                                                                                    <div class="includes-action">
+
+                                                                                        <button type="button" class="btn">
+                                                                                            <i class="fas fa-pen"></i>
+                                                                                        </button>
+                                                                                        <button type="button" class="btn">
+                                                                                            <i class="fas fa-trash-alt"></i>
+                                                                                        </button>
                                                                                     </div>
-                                                                        </div>        
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="includes-list-item">
+                                                                            <div class="row">
+                                                                                <div class="col-lg-9">
+                                                                                    <p>Necessary paper works, all
+                                                                                        government and local taxes</p>
+                                                                                </div>
+                                                                                <div class="col-lg-3">
+                                                                                    <div class="includes-action">
+
+                                                                                        <button type="button" class="btn">
+                                                                                            <i class="fas fa-pen"></i>
+                                                                                        </button>
+                                                                                        <button type="button" class="btn">
+                                                                                            <i class="fas fa-trash-alt"></i>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="includes-list-item">
+                                                                            <div class="row">
+                                                                                <div class="col-lg-9">
+                                                                                    <p>Airport pickup and drop-off (on
+                                                                                        request) services in a private
+                                                                                        vehicle</p>
+                                                                                </div>
+                                                                                <div class="col-lg-3">
+                                                                                    <div class="includes-action">
+
+                                                                                        <button type="button" class="btn">
+                                                                                            <i class="fas fa-pen"></i>
+                                                                                        </button>
+                                                                                        <button type="button" class="btn">
+                                                                                            <i class="fas fa-trash-alt"></i>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="includes-list-item">
+                                                                            <div class="row">
+                                                                                <div class="col-lg-9">
+                                                                                    <p>Down jackets, sleeping bags and
+                                                                                        duffel bags (down jackets,
+                                                                                        sleeping bags and duffel bags
+                                                                                        are to be returned after the
+                                                                                        completion of the trip</p>
+                                                                                </div>
+                                                                                <div class="col-lg-3">
+                                                                                    <div class="includes-action">
+
+                                                                                        <button type="button" class="btn">
+                                                                                            <i class="fas fa-pen"></i>
+                                                                                        </button>
+                                                                                        <button type="button" class="btn">
+                                                                                            <i class="fas fa-trash-alt"></i>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
-        
-        
-        
-        
                                                             </div>
-        
-                                                        </form>
+                                                        </div>
+
+
+
+
                                                     </div>
-                                                    <div class="col-md-2">
-                                                        <a class="btn btn-sm add-btn" href="#" role="button">
-                                                            Save
-                                                        </a>
-                                                    </div>
-                                                </div>
+
+                                                </form>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <a class="btn btn-sm add-btn" href="#" role="button">
+                                                    Save
+                                                </a>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="tab-pane fade" id="gallery" role="tabpanel" aria-labelledby="gallery-tab">...</div>
-                            <div class="tab-pane fade" id="departure" role="tabpanel" aria-labelledby="departure-tab">...</div>
-                            <div class="tab-pane fade" id="booking" role="tabpanel" aria-labelledby="booking-tab">...</div>
-                            <div class="tab-pane fade" id="prebooking" role="tabpanel" aria-labelledby="prebooking-tab">...</div>
+                            <div class="tab-pane fade" id="gallery" role="tabpanel" aria-labelledby="gallery-tab">
+                                <div class="container-fluid">
+                                    <div class="content-block">
+                                        <div class="row align-content-center">
+                                            <div class="col-md-10">
+                                                <form>
+                                                    <div class="form-modified">
+                                                        <div class="form-group row">
+
+                                                            <label for="staticEmail" class="col-sm-2 col-form-label">
+                                                                Gallery</label>
+                                                            <div class="col-sm-10">
+                                                                <input type="text" class="form-control" id="inputPassword"
+                                                                    placeholder="Enter segment title">
+                                                            </div>
+
+                                                        </div>
+
+
+
+
+
+
+                                                    </div>
+
+                                                </form>
+
+                                                <div class="content-block">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <div class="gallery-image-container">
+                                                                <img src="img/travel-2.jpg" alt="">
+                                                                <div class="overlay">
+                                                                    <div class="middle">
+                                                                        <button type="button" class="btn btn-primary">
+                                                                            <i class="fas fa-pen"></i>
+                                                                        </button>
+
+                                                                        <button type="button" class="btn btn-danger">
+                                                                            <i class="fas fa-trash-alt"></i>
+                                                                        </button>
+
+                                                                        <button type="button" class="btn btn-success">
+                                                                            <i class="fas fa-image"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="gallery-image-container">
+                                                                <img src="img/travel-2.jpg" alt="">
+                                                                <div class="overlay">
+                                                                    <div class="middle">
+                                                                        <button type="button" class="btn btn-primary">
+                                                                            <i class="fas fa-pen"></i>
+                                                                        </button>
+
+                                                                        <button type="button" class="btn btn-danger">
+                                                                            <i class="fas fa-trash-alt"></i>
+                                                                        </button>
+
+                                                                        <button type="button" class="btn btn-success">
+                                                                            <i class="fas fa-image"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="gallery-image-container">
+                                                                <img src="img/travel-2.jpg" alt="">
+                                                                <div class="overlay">
+                                                                    <div class="middle">
+                                                                        <button type="button" class="btn btn-primary">
+                                                                            <i class="fas fa-pen"></i>
+                                                                        </button>
+
+                                                                        <button type="button" class="btn btn-danger">
+                                                                            <i class="fas fa-trash-alt"></i>
+                                                                        </button>
+
+                                                                        <button type="button" class="btn btn-success">
+                                                                            <i class="fas fa-image"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-md-2">
+                                                <a class="btn btn-sm add-btn" href="#" data-toggle="modal" data-target="#browseImage"><i
+                                                        class="fas fa-plus"></i>
+                                                    Browse
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="departure" role="tabpanel" aria-labelledby="departure-tab">
+                                <div class="container-fluid">
+                                    <div class="content-block">
+                                        <div class="row align-content-center">
+                                            <div class="col-md-10">
+                                                <form>
+                                                    <div class="form-modified">
+                                                        <div class="form-group row align-items-center">
+
+                                                            <label for="staticEmail" class="col-sm-2 col-form-label">
+                                                                Quota</label>
+                                                            <div class="col-sm-10">
+                                                                <input type="text" class="form-control" id="inputPassword"
+                                                                    placeholder="Enter segment title">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row align-items-center">
+
+                                                            <label for="staticEmail" class="col-sm-2 col-form-label">
+                                                                Departure date</label>
+                                                            <div class="col-sm-10">
+                                                                <input type="text" class="form-control" id="inputPassword"
+                                                                    placeholder="Enter title">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group row align-items-center">
+
+                                                            <label for="staticEmail" class="col-sm-2 col-form-label">
+                                                                Price</label>
+                                                            <div class="col-sm-10">
+                                                                <input type="text" class="form-control" id="inputPassword"
+                                                                    placeholder="$">
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="form-group row align-items-center">
+
+                                                            <label for="staticEmail" class="col-sm-2 col-form-label">Note
+                                                            </label>
+                                                            <div class="col-sm-10">
+                                                                <textarea name="" id="" placeholder="eg. 8 hours"></textarea>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="content-block">
+                                                            <div class="row">
+                                                                <div class="col-md-10 offset-md-2">
+                                                                    <button class="btn default-btn save-btn" type="submit">Save</button>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+
+
+
+
+                                                    </div>
+
+                                                </form>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="booking" role="tabpanel" aria-labelledby="booking-tab">
+                                <div class="booking-table-container">
+                                    <div class="table-responsive">
+                                        <table class="table" id="example">
+                                            <thead class="table-light-bg">
+                                                <tr>
+                                                    <th scope="col">Name</th>
+                                                    <th scope="col">Departure date <i class="fas fa-chevron-down"></i></th>
+                                                    <th scope="col">Country <i class="fas fa-chevron-down"></i></th>
+                                                    <th scope="col">Price <span>($)</span> <i class="fas fa-chevron-down"></i></th>
+                                                    <th scope="col">Contact</th>
+                                                    <th scope="col">Booking date <i class="fas fa-chevron-up"></i></th>
+                                                    <th scope="col">Payment <i class="fas fa-chevron-down"></i></th>
+
+                                                    <th scope="col">Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        James Harold
+                                                        <p>jamesharold@email.com</p>
+                                                    </td>
+                                                    <td>12-09-2018
+                                                        <p>12:08 pm</p>
+
+                                                    </td>
+                                                    <td>England</td>
+                                                    <td>1400</td>
+                                                    <td>+190 3993 494</td>
+                                                    <td>12-08-2018</td>
+                                                    <td>Stripe
+
+                                                    </td>
+
+                                                    <td>
+                                                        <div class="ellipsis-btn">
+                                                            <a href="#" class="btn dropdown-toggle" id="dropdownMenuButton"
+                                                                data-toggle="dropdown" aria-haspopup="true"
+                                                                aria-expanded="true">
+                                                                <i class="fas fa-ellipsis-v"></i>
+
+                                                            </a>
+                                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                <a class="dropdown-item" href="#">View</a>
+                                                                <a class="dropdown-item" href="#">Edit</a>
+                                                                <a class="dropdown-item" href="#">Delete</a>
+                                                            </div>
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        James Harold
+                                                        <p>jamesharold@email.com</p>
+                                                    </td>
+                                                    <td>12-09-2018
+                                                        <p>12:08 pm</p>
+
+                                                    </td>
+                                                    <td>England</td>
+                                                    <td>1400</td>
+                                                    <td>+190 3993 494</td>
+                                                    <td>12-08-2018</td>
+                                                    <td>Stripe
+
+                                                    </td>
+
+                                                    <td>
+                                                        <div class="ellipsis-btn">
+                                                            <a href="#" class="btn dropdown-toggle" id="dropdownMenuButton"
+                                                                data-toggle="dropdown" aria-haspopup="true"
+                                                                aria-expanded="true">
+                                                                <i class="fas fa-ellipsis-v"></i>
+
+                                                            </a>
+                                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                <a class="dropdown-item" href="#">View</a>
+                                                                <a class="dropdown-item" href="#">Edit</a>
+                                                                <a class="dropdown-item" href="#">Delete</a>
+                                                            </div>
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        James Harold
+                                                        <p>jamesharold@email.com</p>
+                                                    </td>
+                                                    <td>12-09-2018
+                                                        <p>12:08 pm</p>
+
+                                                    </td>
+                                                    <td>England</td>
+                                                    <td>1400</td>
+                                                    <td>+190 3993 494</td>
+                                                    <td>12-08-2018</td>
+                                                    <td>Stripe
+
+                                                    </td>
+
+                                                    <td>
+                                                        <div class="ellipsis-btn">
+                                                            <a href="#" class="btn dropdown-toggle" id="dropdownMenuButton"
+                                                                data-toggle="dropdown" aria-haspopup="true"
+                                                                aria-expanded="true">
+                                                                <i class="fas fa-ellipsis-v"></i>
+
+                                                            </a>
+                                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                <a class="dropdown-item" href="#">View</a>
+                                                                <a class="dropdown-item" href="#">Edit</a>
+                                                                <a class="dropdown-item" href="#">Delete</a>
+                                                            </div>
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        James Harold
+                                                        <p>jamesharold@email.com</p>
+                                                    </td>
+                                                    <td>12-09-2018
+                                                        <p>12:08 pm</p>
+
+                                                    </td>
+                                                    <td>England</td>
+                                                    <td>1400</td>
+                                                    <td>+190 3993 494</td>
+                                                    <td>12-08-2018</td>
+                                                    <td>Stripe
+
+                                                    </td>
+
+                                                    <td>
+                                                        <div class="ellipsis-btn">
+                                                            <a href="#" class="btn dropdown-toggle" id="dropdownMenuButton"
+                                                                data-toggle="dropdown" aria-haspopup="true"
+                                                                aria-expanded="true">
+                                                                <i class="fas fa-ellipsis-v"></i>
+
+                                                            </a>
+                                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                <a class="dropdown-item" href="#">View</a>
+                                                                <a class="dropdown-item" href="#">Edit</a>
+                                                                <a class="dropdown-item" href="#">Delete</a>
+                                                            </div>
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="prebooking" role="tabpanel" aria-labelledby="prebooking-tab">
+                                <div class="booking-table-container">
+                                    <div class="table-responsive">
+                                        <table class="table" id="example">
+                                            <thead class="table-light-bg">
+                                                <tr>
+                                                    <th scope="col">Name</th>
+                                                    <th scope="col">Departure date <i class="fas fa-chevron-down"></i></th>
+                                                    <th scope="col">Country <i class="fas fa-chevron-down"></i></th>
+                                                    <th scope="col">Price <span>($)</span> <i class="fas fa-chevron-down"></i></th>
+                                                    <th scope="col">Contact</th>
+                                                    <th scope="col">Booking date <i class="fas fa-chevron-up"></i></th>
+                                                    <th scope="col">Payment <i class="fas fa-chevron-down"></i></th>
+
+                                                    <th scope="col">Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        James Harold
+                                                        <p>jamesharold@email.com</p>
+                                                    </td>
+                                                    <td>12-09-2018
+                                                        <p>12:08 pm</p>
+
+                                                    </td>
+                                                    <td>England</td>
+                                                    <td>1400</td>
+                                                    <td>+190 3993 494</td>
+                                                    <td>12-08-2018</td>
+                                                    <td>Stripe
+
+                                                    </td>
+
+                                                    <td>
+                                                        <div class="ellipsis-btn">
+                                                            <a href="#" class="btn dropdown-toggle" id="dropdownMenuButton"
+                                                                data-toggle="dropdown" aria-haspopup="true"
+                                                                aria-expanded="true">
+                                                                <i class="fas fa-ellipsis-v"></i>
+
+                                                            </a>
+                                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                <a class="dropdown-item" href="#">View</a>
+                                                                <a class="dropdown-item" href="#">Edit</a>
+                                                                <a class="dropdown-item" href="#">Delete</a>
+                                                            </div>
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        James Harold
+                                                        <p>jamesharold@email.com</p>
+                                                    </td>
+                                                    <td>12-09-2018
+                                                        <p>12:08 pm</p>
+
+                                                    </td>
+                                                    <td>England</td>
+                                                    <td>1400</td>
+                                                    <td>+190 3993 494</td>
+                                                    <td>12-08-2018</td>
+                                                    <td>Stripe
+
+                                                    </td>
+
+                                                    <td>
+                                                        <div class="ellipsis-btn">
+                                                            <a href="#" class="btn dropdown-toggle" id="dropdownMenuButton"
+                                                                data-toggle="dropdown" aria-haspopup="true"
+                                                                aria-expanded="true">
+                                                                <i class="fas fa-ellipsis-v"></i>
+
+                                                            </a>
+                                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                <a class="dropdown-item" href="#">View</a>
+                                                                <a class="dropdown-item" href="#">Edit</a>
+                                                                <a class="dropdown-item" href="#">Delete</a>
+                                                            </div>
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        James Harold
+                                                        <p>jamesharold@email.com</p>
+                                                    </td>
+                                                    <td>12-09-2018
+                                                        <p>12:08 pm</p>
+
+                                                    </td>
+                                                    <td>England</td>
+                                                    <td>1400</td>
+                                                    <td>+190 3993 494</td>
+                                                    <td>12-08-2018</td>
+                                                    <td>Stripe
+
+                                                    </td>
+
+                                                    <td>
+                                                        <div class="ellipsis-btn">
+                                                            <a href="#" class="btn dropdown-toggle" id="dropdownMenuButton"
+                                                                data-toggle="dropdown" aria-haspopup="true"
+                                                                aria-expanded="true">
+                                                                <i class="fas fa-ellipsis-v"></i>
+
+                                                            </a>
+                                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                <a class="dropdown-item" href="#">View</a>
+                                                                <a class="dropdown-item" href="#">Edit</a>
+                                                                <a class="dropdown-item" href="#">Delete</a>
+                                                            </div>
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        James Harold
+                                                        <p>jamesharold@email.com</p>
+                                                    </td>
+                                                    <td>12-09-2018
+                                                        <p>12:08 pm</p>
+
+                                                    </td>
+                                                    <td>England</td>
+                                                    <td>1400</td>
+                                                    <td>+190 3993 494</td>
+                                                    <td>12-08-2018</td>
+                                                    <td>Stripe
+
+                                                    </td>
+
+                                                    <td>
+                                                        <div class="ellipsis-btn">
+                                                            <a href="#" class="btn dropdown-toggle" id="dropdownMenuButton"
+                                                                data-toggle="dropdown" aria-haspopup="true"
+                                                                aria-expanded="true">
+                                                                <i class="fas fa-ellipsis-v"></i>
+
+                                                            </a>
+                                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                <a class="dropdown-item" href="#">View</a>
+                                                                <a class="dropdown-item" href="#">Edit</a>
+                                                                <a class="dropdown-item" href="#">Delete</a>
+                                                            </div>
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="review-tab">
+                                <div class="booking-table-container">
+                                    <div class="table-responsive">
+                                        <table class="table" id="example">
+                                            <thead class="table-light-bg">
+                                                <tr>
+                                                    <th scope="col">Name</th>
+                                                    <th scope="col">Title<i class="fas fa-chevron-down"></i></th>
+                                                    <th scope="col">Review <i class="fas fa-chevron-down"></i></th>
+                                                    <th scope="col">Country <i class="fas fa-chevron-down"></i></th>
+                                                    <th scope="col">Date</th>
+                                                    <th scope="col">Rating <i class="fas fa-chevron-up"></i></th>
+                                                    <th scope="col">Publish <i class="fas fa-chevron-down"></i></th>
+
+                                                    <th scope="col">Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="review-image">
+                                                            <img src="img/user.jpg" alt="">
+                                                        </div>
+                                                        <div class="review-name">
+                                                            <h5> James Harold</h5>
+                                                            <p> James Harold</p>
+                                                        </div>
+
+
+                                                    </td>
+                                                    <td>
+                                                        Excellent!
+
+                                                    </td>
+                                                    <td>Very beautiful trek but...</td>
+                                                    <td>England</td>
+                                                    <td>12-08-2018</td>
+                                                    <td>
+                                                        <div class="rating-block">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                        </div>
+                                                    </td>
+
+                                                    <td>
+                                                        <div class="publish">
+                                                            <a class="btn add-btn" href="#" role="button"><i class="fas fa-check"></i>
+                                                                Publish
+                                                            </a>
+                                                        </div>
+
+
+
+                                                    </td>
+
+                                                    <td>
+                                                        <div class="ellipsis-btn">
+                                                            <a href="#" class="btn dropdown-toggle" id="dropdownMenuButton"
+                                                                data-toggle="dropdown" aria-haspopup="true"
+                                                                aria-expanded="true">
+                                                                <i class="fas fa-ellipsis-v"></i>
+
+                                                            </a>
+                                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                <a class="dropdown-item" href="#">View</a>
+                                                                <a class="dropdown-item" href="#">Edit</a>
+                                                                <a class="dropdown-item" href="#">Delete</a>
+                                                            </div>
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <div class="review-image">
+                                                            <img src="img/user.jpg" alt="">
+                                                        </div>
+                                                        <div class="review-name">
+                                                            <h5> James Harold</h5>
+                                                            <p> James Harold</p>
+                                                        </div>
+
+
+                                                    </td>
+                                                    <td>
+                                                        Excellent!
+
+                                                    </td>
+                                                    <td>Very beautiful trek but...</td>
+                                                    <td>England</td>
+                                                    <td>12-08-2018</td>
+                                                    <td>
+                                                        <div class="rating-block">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                        </div>
+                                                    </td>
+
+                                                    <td>
+                                                        <div class="publish">
+                                                            <a class="btn add-btn" href="#" role="button"><i class="fas fa-check"></i>
+                                                                Publish
+                                                            </a>
+                                                        </div>
+
+
+
+                                                    </td>
+
+                                                    <td>
+                                                        <div class="ellipsis-btn">
+                                                            <a href="#" class="btn dropdown-toggle" id="dropdownMenuButton"
+                                                                data-toggle="dropdown" aria-haspopup="true"
+                                                                aria-expanded="true">
+                                                                <i class="fas fa-ellipsis-v"></i>
+
+                                                            </a>
+                                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                <a class="dropdown-item" href="#">View</a>
+                                                                <a class="dropdown-item" href="#">Edit</a>
+                                                                <a class="dropdown-item" href="#">Delete</a>
+                                                            </div>
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <div class="review-image">
+                                                            <img src="img/user.jpg" alt="">
+                                                        </div>
+                                                        <div class="review-name">
+                                                            <h5> James Harold</h5>
+                                                            <p> James Harold</p>
+                                                        </div>
+
+
+                                                    </td>
+                                                    <td>
+                                                        Excellent!
+
+                                                    </td>
+                                                    <td>Very beautiful trek but...</td>
+                                                    <td>England</td>
+                                                    <td>12-08-2018</td>
+                                                    <td>
+                                                        <div class="rating-block">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                        </div>
+                                                    </td>
+
+                                                    <td>
+                                                        <div class="publish">
+                                                            <a class="btn add-btn" href="#" role="button"><i class="fas fa-check"></i>
+                                                                Publish
+                                                            </a>
+                                                        </div>
+
+
+
+                                                    </td>
+
+                                                    <td>
+                                                        <div class="ellipsis-btn">
+                                                            <a href="#" class="btn dropdown-toggle" id="dropdownMenuButton"
+                                                                data-toggle="dropdown" aria-haspopup="true"
+                                                                aria-expanded="true">
+                                                                <i class="fas fa-ellipsis-v"></i>
+
+                                                            </a>
+                                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                <a class="dropdown-item" href="#">View</a>
+                                                                <a class="dropdown-item" href="#">Edit</a>
+                                                                <a class="dropdown-item" href="#">Delete</a>
+                                                            </div>
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <div class="review-image">
+                                                            <img src="img/user.jpg" alt="">
+                                                        </div>
+                                                        <div class="review-name">
+                                                            <h5> James Harold</h5>
+                                                            <p> James Harold</p>
+                                                        </div>
+
+
+                                                    </td>
+                                                    <td>
+                                                        Excellent!
+
+                                                    </td>
+                                                    <td>Very beautiful trek but...</td>
+                                                    <td>England</td>
+                                                    <td>12-08-2018</td>
+                                                    <td>
+                                                        <div class="rating-block">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                        </div>
+                                                    </td>
+
+                                                    <td>
+                                                        <div class="publish">
+                                                            <a class="btn add-btn" href="#" data-toggle="modal"
+                                                                data-target="#confirm"><i class="fas fa-times"></i>
+                                                                Unpublish
+                                                            </a>
+                                                        </div>
+
+
+
+                                                    </td>
+
+                                                    <td>
+                                                        <div class="ellipsis-btn">
+                                                            <a href="#" class="btn dropdown-toggle" id="dropdownMenuButton"
+                                                                data-toggle="dropdown" aria-haspopup="true"
+                                                                aria-expanded="true">
+                                                                <i class="fas fa-ellipsis-v"></i>
+
+                                                            </a>
+                                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                <a class="dropdown-item" href="#" data-toggle="modal"
+                                                                    data-target="#review-modal">View</a>
+                                                                <a class="dropdown-item" href="#">Edit</a>
+                                                                <a class="dropdown-item" href="#">Delete</a>
+                                                            </div>
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
+
                     </div>
 
                     <!-- Tabs ends -->
@@ -980,6 +1755,163 @@
         </div>
     </div>
     <!-- end attraction modal -->
+
+
+    <!-- Browse image modal -->
+    <!-- Modal -->
+
+    <div class="modal fade" id="browseImage" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Browse image</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-modified">
+                        <div class="input-group mb-4">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="inputGroupFile02">
+                                <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Choose
+                                    file</label>
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="inputPassword" placeholder="Image title">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn default-btn">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Browse image modal ends -->
+
+
+
+    <!-- Publish modal -->
+    <div class="modal fade" id="confirm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Are you sure?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="content-block">
+                        <div class="confirmation-block">
+
+
+                            <button type="button" class="btn default-btn">Yes</button>
+                            <button type="button" class="btn default-btn outline">No</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Publish modal ends -->
+
+
+    <!-- Review modal -->
+    <div class="modal fade" id="review-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Review</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="review-block">
+
+                        <div class="review-image">
+                            <img src="img/user.jpg" alt="">
+                        </div>
+                        <div class="review-name">
+                            <h5> James Harold</h5>
+                            <p> jamesharold@email.com</p>
+                        </div>
+                        <div class="review-date">
+                            <p>From <span>England</span> on <span>12-08-2018</span> </p>
+
+                        </div>
+                        <div class="review-text">
+                            <p>
+                                “We completed this trek in late Sept. / early Oct. We did this trek as a family ( 2
+                                adults
+                                and 2 young children (12yo and 9yo). The trek was a lot of fun! Certainly a medium
+                                difficulty - but doable by just about anyone! Spectacular!”
+                            </p>
+                        </div>
+
+                        <div class="rating-block">
+                            <p>Rating</p>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="modal-footer">
+                    <div class="publish-block">
+                        <button type="button" class="btn default-btn"><i class="fas fa-check"></i> Publish</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Review modal ends -->
+
+
+    <!-- Add segment -->
+    <div class="modal fade" id="addSegment" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add segment</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-modified">
+                        <form action="">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="inputPassword" placeholder="Add segment">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn default-btn">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Add segment ends -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
