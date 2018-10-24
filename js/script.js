@@ -38,55 +38,55 @@ $(document).ready(function () {
 //         x--; //Decrement field counter
 //     });
    
-//     var ctx = document.getElementById("myChart");
-// var myChart = new Chart(ctx, {
-//     type: 'doughnut',
-//     data: {
-//         labels: ["Pending", "Inprogress", "Completed"],
-//         datasets: [{
-//             label: '# of Votes',
-//             data: [12, 19, 3,],
-//             backgroundColor: [
-//                 'rgba(255, 99, 132, 1)',
-//                 'rgba(54, 162, 235, 1)',
-//                 'rgba(255, 206, 86, 1)'
+    var ctx = document.getElementById("myChart");
+var myChart = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+        labels: ["Pending", "Inprogress", "Completed"],
+        datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3,],
+            backgroundColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)'
                 
-//             ]
+            ]
            
-//         }]
-//     },
-//     options: {
-//         scales: {
-//             yAxes: [{
-//                 ticks: {
-//                     display:false
-//                 },
-//                 gridLines: {
-//                     display: false,
-//                     drawBorder: false
-//                   },
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    display:false
+                },
+                gridLines: {
+                    display: false,
+                    drawBorder: false
+                  },
                  
-//             }],
-//             xAxes: [{
-//                 ticks: {
-//                     display:false
-//                 },  
-//                 gridLines: {
-//                     display: false,
-//                     drawBorder: false
-//                   },
+            }],
+            xAxes: [{
+                ticks: {
+                    display:false
+                },  
+                gridLines: {
+                    display: false,
+                    drawBorder: false
+                  },
                  
-//             }],
+            }],
            
-//         },
-//         padding: {
-//             left: 0,
-//             right: 0,
-//             top: 0,
-//             bottom: 0
-//         }
-//     }
-// });
+        },
+        padding: {
+            left: 0,
+            right: 0,
+            top: 0,
+            bottom: 0
+        }
+    }
+});
 
 // $(document).ready(function() {
 //     $('#example').DataTable( {

@@ -9,6 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/css/bootstrap-select.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 
@@ -254,12 +255,27 @@
                     <div class="table-title">
                         <div class="container-fluid px-0">
                             <div class="row align-items-center">
-                                <div class="col-lg-9">
-                                    <h5>Manage packages</h5>
+                                <div class="col-lg-6">
+                                    <h5>Sales report</h5>
                                 </div>
-                                <div class="col-lg-3">
-                                    <a class="btn add-btn" href="create-package.html" role="button"><i class="fas fa-plus"></i> Add new
-                                        package</a>
+                                <div class="col-lg-6">
+                                    <div class="sales-action">
+                                            <div class="export-block">
+                                                    <a class="btn add-btn" href="#" data-toggle="modal" data-target="#browseImage"><i class="fas fa-file-export"></i>
+                                                        Export to pdf
+                                                    </a>
+                                            </div>
+                                                
+                                               
+                                            <select class="selectpicker">
+                                                <option selected="">Filter</option>
+                                                <option value="1">Today</option>
+                                                <option value="2">This week</option>
+                                                <option value="3">This month</option>
+                                                <option value="3">This year</option>
+                                            </select>
+                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -270,166 +286,107 @@
                             <table class="table" id="example">
                                 <thead class="table-light-bg">
                                     <tr>
-                                        <th scope="col">Image</th>
-                                        <th scope="col">Package <i class="fas fa-chevron-down"></i></th>
-                                        <th scope="col">Duration <i class="fas fa-chevron-down"></i></th>
-                                        <th scope="col">Price <span>($)</span> <i class="fas fa-chevron-down"></i></th>
-                                        <th scope="col">Type</th>
-                                        <th scope="col">Upcoming departure <i class="fas fa-chevron-up"></i></th>
-                                        <th scope="col">Bookings <i class="fas fa-chevron-down"></i></th>
-                                        <th scope="col">Pre-bookings <i class="fas fa-chevron-down"></i></th>
+                                        <th scope="col">Date of sales</th>
+                                        <th scope="col">Customer <i class="fas fa-chevron-down"></i></th>
+                                        <th scope="col">Package name</th>
+                                        <th scope="col">Price <span>($)</span>  <i class="fas fa-chevron-down"></i></th>
+                                        <th scope="col">Contact</th>
+                                        <th scope="col">Start date</th>
+                                       
                                         <th scope="col">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td>
-                                            <div class="table-image">
-                                                <img src="img/signup-image.jpg" alt="">
-                                            </div>
+                                            12-08-2018
                                         </td>
-                                        <td>Annapurna Circuit</td>
-                                        <td>8 days/7 nights</td>
-                                        <td>1400</td>
-                                        <td>Multiday tours</td>
-                                        <td>12-08-2018</td>
-                                        <td> <a href="#" class="badge badge-success">15</a></td>
-                                        <td> <a href="#" class="badge badge-primary">10</a> </td>
                                         <td>
-                                            <div class="ellipsis-btn">
-                                                <a href="#" class="btn dropdown-toggle" id="dropdownMenuButton"
-                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                    <i class="fas fa-ellipsis-v"></i>
-
-                                                </a>
-                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                    <a class="dropdown-item" href="#">View</a>
-                                                    <a class="dropdown-item" href="#">Edit</a>
-                                                    <a class="dropdown-item" href="#">Delete</a>
-                                                </div>
-                                            </div>
-
+                                            James Harold
+                                            <p>jamesharold@email.com</p>
                                         </td>
+                                        <td>
+                                            Mardi Himal Trek
+                                        </td>
+                                        <td>1400</td>
+                                        <td>+100 98383 038</td>
+                                        <td>22-08-2018</td>
+                                        <td><div class="publish">
+                                            <a class="btn add-btn" href="#">
+                                                View
+                                            </a>
+                                        </div></td>
+                                        
                                     </tr>
+                                    
                                     <tr>
                                         <td>
-                                            <div class="table-image">
-                                                <img src="img/signup-image.jpg" alt="">
-                                            </div>
+                                            12-08-2018
                                         </td>
-                                        <td>Annapurna Circuit</td>
-                                        <td>8 days/7 nights</td>
-                                        <td>1400</td>
-                                        <td>Multiday tours</td>
-                                        <td>12-08-2018</td>
-                                        <td> <a href="#" class="badge badge-success">15</a></td>
-                                        <td> <a href="#" class="badge badge-primary">10</a> </td>
                                         <td>
-                                            <div class="ellipsis-btn">
-                                                <a href="#" class="btn dropdown-toggle" id="dropdownMenuButton"
-                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                    <i class="fas fa-ellipsis-v"></i>
-
-                                                </a>
-                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                    <a class="dropdown-item" href="#">View</a>
-                                                    <a class="dropdown-item" href="#">Edit</a>
-                                                    <a class="dropdown-item" href="#">Delete</a>
-                                                </div>
-                                            </div>
-
+                                            James Harold
+                                            <p>jamesharold@email.com</p>
                                         </td>
+                                        <td>
+                                            Mardi Himal Trek
+                                        </td>
+                                        <td>1400</td>
+                                        <td>+100 98383 038</td>
+                                        <td>22-08-2018</td>
+                                        <td><div class="publish">
+                                            <a class="btn add-btn" href="#"> 
+                                                View
+                                            </a>
+                                        </div></td>
+                                        
                                     </tr>
 
                                     <tr>
                                         <td>
-                                            <div class="table-image">
-                                                <img src="img/signup-image.jpg" alt="">
-                                            </div>
+                                            12-08-2018
                                         </td>
-                                        <td>Mardi Himal Trek</td>
-                                        <td>8 days/7 nights</td>
-                                        <td>1400</td>
-                                        <td>Multiday tours</td>
-                                        <td>12-08-2018</td>
-                                        <td> <a href="#" class="badge badge-success">15</a></td>
-                                        <td> <a href="#" class="badge badge-primary">10</a> </td>
                                         <td>
-                                            <div class="ellipsis-btn">
-                                                <a href="#" class="btn dropdown-toggle" id="dropdownMenuButton"
-                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                    <i class="fas fa-ellipsis-v"></i>
-
-                                                </a>
-                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                    <a class="dropdown-item" href="#">View details</a>
-                                                    <a class="dropdown-item" href="#">Edit</a>
-                                                    <a class="dropdown-item" href="#">Delete</a>
-                                                </div>
-                                            </div>
-
+                                            James Harold
+                                            <p>jamesharold@email.com</p>
                                         </td>
+                                        <td>
+                                            Mardi Himal Trek
+                                        </td>
+                                        <td>1400</td>
+                                        <td>+100 98383 038</td>
+                                        <td>22-08-2018</td>
+                                        <td><div class="publish">
+                                            <a class="btn add-btn" href="#">
+                                                View
+                                            </a>
+                                        </div></td>
+                                        
                                     </tr>
 
                                     <tr>
                                         <td>
-                                            <div class="table-image">
-                                                <img src="img/signup-image.jpg" alt="">
-                                            </div>
+                                            12-08-2018
                                         </td>
-                                        <td>14 days manang-mustang</td>
-                                        <td>8 days/7 nights</td>
+                                        <td>
+                                            James Harold
+                                            <p>jamesharold@email.com</p>
+                                        </td>
+                                        <td>
+                                            Mardi Himal Trek
+                                        </td>
                                         <td>1400</td>
-                                        <td>Multiday tours</td>
-                                        <td>12-08-2018</td>
-                                        <td> <a href="#" class="badge badge-success">15</a></td>
-                                        <td> <a href="#" class="badge badge-primary">10</a> </td>
-                                        <td>
-                                            <div class="ellipsis-btn">
-                                                <a href="#" class="btn dropdown-toggle" id="dropdownMenuButton"
-                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                    <i class="fas fa-ellipsis-v"></i>
-
-                                                </a>
-                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                    <a class="dropdown-item" href="#">View</a>
-                                                    <a class="dropdown-item" href="#">Edit</a>
-                                                    <a class="dropdown-item" href="#">Delete</a>
-                                                </div>
-                                            </div>
-
-                                        </td>
+                                        <td>+100 98383 038</td>
+                                        <td>22-08-2018</td>
+                                        <td><div class="publish">
+                                            <a class="btn add-btn" href="#">
+                                                View
+                                            </a>
+                                        </div></td>
+                                        
                                     </tr>
+                                  
 
-                                    <tr>
-                                        <td>
-                                            <div class="table-image">
-                                                <img src="img/signup-image.jpg" alt="">
-                                            </div>
-                                        </td>
-                                        <td>Annapurna Circuit</td>
-                                        <td>8 days/7 nights</td>
-                                        <td>1400</td>
-                                        <td>Multiday tours</td>
-                                        <td>12-08-2018</td>
-                                        <td> <a href="#" class="badge badge-success">15</a></td>
-                                        <td> <a href="#" class="badge badge-primary">10</a> </td>
-                                        <td>
-                                            <div class="ellipsis-btn">
-                                                <a href="#" class="btn dropdown-toggle" id="dropdownMenuButton"
-                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                    <i class="fas fa-ellipsis-v"></i>
-
-                                                </a>
-                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                    <a class="dropdown-item" href="#">View</a>
-                                                    <a class="dropdown-item" href="#">Edit</a>
-                                                    <a class="dropdown-item" href="#">Delete</a>
-                                                </div>
-                                            </div>
-
-                                        </td>
-                                    </tr>
+                                   
                                 </tbody>
                             </table>
                         </div>
@@ -475,7 +432,9 @@
     <script src="js/Chart.js"></script>
     <script src="js/Chart.bundle.js"></script>
 
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/js/bootstrap-select.min.js"></script>
     <script src="js/price-slider.js"></script>
     <script src="js/script.js"></script>
 

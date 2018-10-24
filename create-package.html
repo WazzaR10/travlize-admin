@@ -70,16 +70,14 @@
         <div class="navigation-wrapper">
             <nav class="navbar navbar-expand-lg">
 
-                <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">
-                    <i class="fas fa-bars"></i>
-                </a>
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <div class="container-fluid">
+                    <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </a>
+
                     <div class="welcome-text">
                         <p>Welcome to
                             <strong>Travlize</strong>
@@ -94,8 +92,20 @@
                                     <img src="img/user.jpg" alt=""> Hey,John
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">
+                                        <div class="activity-box">
+                                            <div class="activity-image">
+                                                <img src="img/user.jpg" alt="">
+                                            </div>
+                                            <div class="activity-desc">
+                                                <p> <strong>Robbie Williams</strong> </p>
+                                                <p><i class="fas fa-envelope"></i> robbiewill@gmail.com</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                     <a class="dropdown-item" href="my-profile.html"><i class="fas fa-user"></i> Profile</a>
-                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#changepassword"><i class="fas fa-key"></i> Change
+                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#changepassword"><i
+                                            class="fas fa-key"></i> Change
                                         password</a>
 
                                     <a class="dropdown-item" href="#"><i class="fas fa-power-off"></i> Logout</a>
@@ -498,14 +508,14 @@
                                                                                 <div class="row no-gutters">
                                                                                     <div class="col-sm-6">
                                                                                         <div class="remove-btn-wrapper">
-                                                                                            <button type="button" class="btn btn-xs btn-danger">
+                                                                                            <button type="button" class="btn btn-xs default-btn">
                                                                                                 <i class="fas fa-times"></i>
                                                                                             </button>
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-sm-6">
                                                                                         <div class="change-btn-wrapper">
-                                                                                            <button type="button" class="btn btn-xs btn-primary">
+                                                                                            <button type="button" class="btn btn-xs default-btn">
                                                                                                 <i class="fas fa-pen"></i>
                                                                                             </button>
                                                                                         </div>
@@ -654,23 +664,26 @@
                                                             <div class="col-sm-10">
                                                                 <textarea name="" id="" placeholder="eg. Necessary paperworks and all government papers."></textarea>
                                                             </div>
-                                                            <!-- <div class="col-sm-2">
-                                                                <select class="selectpicker">
-                                                                    <option selected="">Select icon</option>
-                                                                    <option value="1" data-icon="glyphicon-picture">
-                                                                        Plane
-                                                                    </option>
-                                                                    <option value="2">
-
-                                                                    </option>
-                                                                    <option value="3">Group tours</option>
-                                                                    <option value="3">Private tours</option>
-                                                                </select>
-                                                            </div> -->
+                                                            
                                                         </div>
 
-                                                        <div class="form-group row">
-                                                            <div class="col-sm-10 offset-2">
+                                                        
+
+
+
+
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <a class="btn btn-sm add-btn" href="#" role="button">
+                                                    Save
+                                                </a>
+                                            </div>
+
+                                            <div class="col-md-12">
+                                                    <div class="form-group row">
+                                                            <div class="col-lg-10 offset-lg-2">
                                                                 <div class="includes-list">
                                                                     <div class="includes-list-item">
                                                                         <div class="row">
@@ -684,7 +697,8 @@
                                                                                     <button type="button" class="btn">
                                                                                         <i class="fas fa-pen"></i>
                                                                                     </button>
-                                                                                    <button type="button" class="btn">
+                                                                                    <button type="button" class="btn"
+                                                                                        data-toggle="modal" data-target="#delete">
                                                                                         <i class="fas fa-trash-alt"></i>
                                                                                     </button>
                                                                                 </div>
@@ -757,18 +771,6 @@
 
                                                             </div>
                                                         </div>
-
-
-
-
-                                                    </div>
-
-                                                </form>
-                                            </div>
-                                            <div class="col-md-2">
-                                                <a class="btn btn-sm add-btn" href="#" role="button">
-                                                    Save
-                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -936,71 +938,7 @@
 
                                                 </form>
 
-                                                <div class="content-block">
-                                                    <div class="row">
-                                                        <div class="col-md-4">
-                                                            <div class="gallery-image-container">
-                                                                <img src="img/travel-2.jpg" alt="">
-                                                                <div class="overlay">
-                                                                    <div class="middle">
-                                                                        <button type="button" class="btn btn-primary">
-                                                                            <i class="fas fa-pen"></i>
-                                                                        </button>
-
-                                                                        <button type="button" class="btn btn-danger">
-                                                                            <i class="fas fa-trash-alt"></i>
-                                                                        </button>
-
-                                                                        <button type="button" class="btn btn-success">
-                                                                            <i class="fas fa-image"></i>
-                                                                        </button>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <div class="gallery-image-container">
-                                                                <img src="img/travel-2.jpg" alt="">
-                                                                <div class="overlay">
-                                                                    <div class="middle">
-                                                                        <button type="button" class="btn btn-primary">
-                                                                            <i class="fas fa-pen"></i>
-                                                                        </button>
-
-                                                                        <button type="button" class="btn btn-danger">
-                                                                            <i class="fas fa-trash-alt"></i>
-                                                                        </button>
-
-                                                                        <button type="button" class="btn btn-success">
-                                                                            <i class="fas fa-image"></i>
-                                                                        </button>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <div class="gallery-image-container">
-                                                                <img src="img/travel-2.jpg" alt="">
-                                                                <div class="overlay">
-                                                                    <div class="middle">
-                                                                        <button type="button" class="btn btn-primary">
-                                                                            <i class="fas fa-pen"></i>
-                                                                        </button>
-
-                                                                        <button type="button" class="btn btn-danger">
-                                                                            <i class="fas fa-trash-alt"></i>
-                                                                        </button>
-
-                                                                        <button type="button" class="btn btn-success">
-                                                                            <i class="fas fa-image"></i>
-                                                                        </button>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                
 
                                             </div>
                                             <div class="col-md-2">
@@ -1008,6 +946,74 @@
                                                         class="fas fa-plus"></i>
                                                     Browse
                                                 </a>
+                                            </div>
+
+                                            <div class="col-md-12">
+                                                    <div class="content-block">
+                                                            <div class="row">
+                                                                <div class="col-lg-4">
+                                                                    <div class="gallery-image-container">
+                                                                        <img src="img/travel-2.jpg" alt="">
+                                                                        <div class="overlay">
+                                                                            <div class="middle">
+                                                                                <button type="button" class="btn btn-primary">
+                                                                                    <i class="fas fa-pen"></i>
+                                                                                </button>
+        
+                                                                                <button type="button" class="btn btn-danger">
+                                                                                    <i class="fas fa-trash-alt"></i>
+                                                                                </button>
+        
+                                                                                <button type="button" class="btn btn-success">
+                                                                                    <i class="fas fa-image"></i>
+                                                                                </button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+        
+                                                                </div>
+                                                                <div class="col-lg-4">
+                                                                    <div class="gallery-image-container">
+                                                                        <img src="img/travel-2.jpg" alt="">
+                                                                        <div class="overlay">
+                                                                            <div class="middle">
+                                                                                <button type="button" class="btn btn-primary">
+                                                                                    <i class="fas fa-pen"></i>
+                                                                                </button>
+        
+                                                                                <button type="button" class="btn btn-danger">
+                                                                                    <i class="fas fa-trash-alt"></i>
+                                                                                </button>
+        
+                                                                                <button type="button" class="btn btn-success">
+                                                                                    <i class="fas fa-image"></i>
+                                                                                </button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-4">
+                                                                    <div class="gallery-image-container">
+                                                                        <img src="img/travel-2.jpg" alt="">
+                                                                        <div class="overlay">
+                                                                            <div class="middle">
+                                                                                <button type="button" class="btn btn-primary">
+                                                                                    <i class="fas fa-pen"></i>
+                                                                                </button>
+        
+                                                                                <button type="button" class="btn btn-danger">
+                                                                                    <i class="fas fa-trash-alt"></i>
+                                                                                </button>
+        
+                                                                                <button type="button" class="btn btn-success">
+                                                                                    <i class="fas fa-image"></i>
+                                                                                </button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                             </div>
                                         </div>
                                     </div>
@@ -1102,8 +1108,15 @@
                                             <tbody>
                                                 <tr>
                                                     <td>
-                                                        James Harold
-                                                        <p>jamesharold@email.com</p>
+                                                        <div class="review-image">
+                                                            <img src="img/user.jpg" alt="">
+                                                        </div>
+
+                                                        <div class="review-name">
+                                                            James Harold
+                                                            <p>jamesharold@email.com</p>
+                                                        </div>
+
                                                     </td>
                                                     <td>12-09-2018
                                                         <p>12:08 pm</p>
@@ -1137,8 +1150,14 @@
 
                                                 <tr>
                                                     <td>
-                                                        James Harold
-                                                        <p>jamesharold@email.com</p>
+                                                        <div class="review-image">
+                                                            <img src="img/user.jpg" alt="">
+                                                        </div>
+
+                                                        <div class="review-name">
+                                                            James Harold
+                                                            <p>jamesharold@email.com</p>
+                                                        </div>
                                                     </td>
                                                     <td>12-09-2018
                                                         <p>12:08 pm</p>
@@ -1172,8 +1191,14 @@
 
                                                 <tr>
                                                     <td>
-                                                        James Harold
-                                                        <p>jamesharold@email.com</p>
+                                                        <div class="review-image">
+                                                            <img src="img/user.jpg" alt="">
+                                                        </div>
+
+                                                        <div class="review-name">
+                                                            James Harold
+                                                            <p>jamesharold@email.com</p>
+                                                        </div>
                                                     </td>
                                                     <td>12-09-2018
                                                         <p>12:08 pm</p>
@@ -1207,8 +1232,14 @@
 
                                                 <tr>
                                                     <td>
-                                                        James Harold
-                                                        <p>jamesharold@email.com</p>
+                                                        <div class="review-image">
+                                                            <img src="img/user.jpg" alt="">
+                                                        </div>
+
+                                                        <div class="review-name">
+                                                            James Harold
+                                                            <p>jamesharold@email.com</p>
+                                                        </div>
                                                     </td>
                                                     <td>12-09-2018
                                                         <p>12:08 pm</p>
@@ -1264,8 +1295,14 @@
                                             <tbody>
                                                 <tr>
                                                     <td>
-                                                        James Harold
-                                                        <p>jamesharold@email.com</p>
+                                                        <div class="review-image">
+                                                            <img src="img/user.jpg" alt="">
+                                                        </div>
+
+                                                        <div class="review-name">
+                                                            James Harold
+                                                            <p>jamesharold@email.com</p>
+                                                        </div>
                                                     </td>
                                                     <td>12-09-2018
                                                         <p>12:08 pm</p>
@@ -1299,8 +1336,14 @@
 
                                                 <tr>
                                                     <td>
-                                                        James Harold
-                                                        <p>jamesharold@email.com</p>
+                                                        <div class="review-image">
+                                                            <img src="img/user.jpg" alt="">
+                                                        </div>
+
+                                                        <div class="review-name">
+                                                            James Harold
+                                                            <p>jamesharold@email.com</p>
+                                                        </div>
                                                     </td>
                                                     <td>12-09-2018
                                                         <p>12:08 pm</p>
@@ -1334,8 +1377,14 @@
 
                                                 <tr>
                                                     <td>
-                                                        James Harold
-                                                        <p>jamesharold@email.com</p>
+                                                        <div class="review-image">
+                                                            <img src="img/user.jpg" alt="">
+                                                        </div>
+
+                                                        <div class="review-name">
+                                                            James Harold
+                                                            <p>jamesharold@email.com</p>
+                                                        </div>
                                                     </td>
                                                     <td>12-09-2018
                                                         <p>12:08 pm</p>
@@ -1369,8 +1418,14 @@
 
                                                 <tr>
                                                     <td>
-                                                        James Harold
-                                                        <p>jamesharold@email.com</p>
+                                                        <div class="review-image">
+                                                            <img src="img/user.jpg" alt="">
+                                                        </div>
+
+                                                        <div class="review-name">
+                                                            James Harold
+                                                            <p>jamesharold@email.com</p>
+                                                        </div>
                                                     </td>
                                                     <td>12-09-2018
                                                         <p>12:08 pm</p>
@@ -1808,15 +1863,11 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <div class="content-block">
-                        <div class="confirmation-block">
-
-
-                            <button type="button" class="btn default-btn">Yes</button>
-                            <button type="button" class="btn default-btn outline">No</button>
-                        </div>
+                    <div class="confirmation-block">
+                        <p>Do you really want to publish this review?This process can't be undone.</p>
+                        <button type="button" class="btn default-btn">Yes</button>
+                        <button type="button" class="btn default-btn outline">No</button>
                     </div>
-
                 </div>
 
             </div>
@@ -1912,6 +1963,31 @@
         </div>
     </div>
     <!-- Add segment ends -->
+
+
+    <!-- Delete modal -->
+    <div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Are you sure?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="confirmation-block">
+                        <p>Do you really want to publish this review? This process can't be undone.</p>
+                        <button type="button" class="btn default-btn">Yes</button>
+                        <button type="button" class="btn default-btn outline">No</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Delete modal ends -->
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
