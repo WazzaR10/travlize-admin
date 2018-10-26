@@ -16,6 +16,9 @@ $(document).ready(function () {
         });
         $('.selectpicker').selectpicker();
     });
+    // $('.navbar .dropdown > a').click(function () {
+    //     location.href = this.href;
+    // });
 //     var maxField = 10; //Input fields increment limitation
 //     var addButton = $('.add_button'); //Add button selector
 //     var wrapper = $('.field_wrapper'); //Input field wrapper

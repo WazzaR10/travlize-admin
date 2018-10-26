@@ -1,122 +1,19 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/css/bootstrap-select.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-
-
-
-    <title>Travlize Admin</title>
-</head>
-
+    <?php require_once('head.php');?>
+    
 <body>
 
-    <div id="wrapper">
-
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="#">
-                        Travlize
-                    </a>
-                </li>
-                <div class="sidebar-nav-item">
-                    <li class="active">
-                        <a href="#">
-                            <i class="fas fa-building"></i> Business</a>
-                    </li>
-                    <li>
-                        <a href="package.html">
-                            <i class="fas fa-box-open"></i> Packages</a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            <i class="fas fa-asterisk"></i> Services</a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fas fa-arrows-alt-h"></i> Connections</a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="icon-holder"><i class="fa fa-user-cog"></i></span>
-                            <span class="title">Settings</span><span class="arrow-right"><i class="fa fa-chevron-right"></i></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                </div>
-
-
-            </ul>
-        </div>
-        <!-- /#sidebar-wrapper -->
-
-        <!-- Navigation -->
-        <div class="navigation-wrapper">
-            <nav class="navbar navbar-expand-lg">
-
-                <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">
-                    <i class="fas fa-bars"></i>
-                </a>
-
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <div class="welcome-text">
-                        <p>Welcome to
-                            <strong>Travlize</strong>
-                        </p>
-                    </div>
-
-                    <div class="profile-icon ml-auto">
-                        <ul class="navbar-nav ">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="my-profile.html" id="navbarDropdown" role="button"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <img src="img/user.jpg" alt=""> Hey,John
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="my-profile.html"><i class="fas fa-user"></i> Profile</a>
-                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#changepassword"><i
-                                            class="fas fa-key"></i> Change
-                                        password</a>
-
-                                    <a class="dropdown-item" href="#"><i class="fas fa-power-off"></i> Logout</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-            </nav>
-        </div>
-        <!-- Navigation ends -->
+<div id="wrapper">
+<?php require_once('sidebar.php');?>
+<?php require_once('top-nav.php');?>
+ <!-- Page Content -->
+ <div id="page-content-wrapper" class="dashboard">
+ 
 
 
 
-
-
-        <!-- Page Content -->
-        <div id="page-content-wrapper" class="dashboard">
-
-            <div class="breadcrumb-block">
+<div class="breadcrumb-block">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item">
@@ -416,28 +313,19 @@
                 </div>
 
             </div>
+
+
+
+            
+
+
         </div>
         <!-- /#page-content-wrapper -->
 
-    </div>
-    <!-- /#wrapper -->
-    <!-- Menu Toggle Script -->
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/Chart.js"></script>
-    <script src="js/Chart.bundle.js"></script>
-
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/js/bootstrap-select.min.js"></script>
-    <script src="js/price-slider.js"></script>
-    <script src="js/script.js"></script>
+</div>
+<?php require_once('scripts.php');?>
 
 </body>
-
 </html>
