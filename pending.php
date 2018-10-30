@@ -72,11 +72,15 @@
                                                         
                                                     </td>
                                                     <td>
-                                                            <div class="publish">
-                                                                    <a class="btn add-btn" href="#" role="button">
-                                                                        Disable
-                                                                    </a>
-                                                                </div>
+                                                    <div class="inline-button-block">
+                                                                    <a class="btn default-btn green" href="#" role="button">
+                                                                        <i class="fas fa-reply"></i> Resend invitation
+                                                                        </a>
+
+                                                                          <a class="btn default-btn red" href="#" role="button">
+                                                                          <i class="fas fa-trash-alt"></i> Delete user
+                                                                        </a>
+                                                                    </div>
                                                     </td>
                                                 </tr>
                                                
@@ -91,11 +95,18 @@
                                                             
                                                         </td>
                                                         <td>
-                                                                <div class="publish">
-                                                                        <a class="btn add-btn" href="#" role="button">
-                                                                            Disable
+                                                                
+                                                        <div class="inline-button-block">
+                                                                    <a class="btn default-btn green" href="#" role="button">
+                                                                        <i class="fas fa-reply"></i> Resend invitation
+                                                                        </a>
+
+                                                                          <a class="btn default-btn red" href="#" role="button">
+                                                                          <i class="fas fa-trash-alt"></i> Delete user
                                                                         </a>
                                                                     </div>
+                                                                  
+                                                                    
                                                         </td>
                                                     </tr>
 
@@ -111,11 +122,15 @@
                                                                 
                                                             </td>
                                                             <td>
-                                                                    <div class="publish">
-                                                                            <a class="btn add-btn" href="#" role="button">
-                                                                                Disable
-                                                                            </a>
-                                                                        </div>
+                                                            <div class="inline-button-block">
+                                                                    <a class="btn default-btn green" href="#" role="button">
+                                                                        <i class="fas fa-reply"></i> Resend invitation
+                                                                        </a>
+
+                                                                          <a class="btn default-btn red" href="#" role="button">
+                                                                          <i class="fas fa-trash-alt"></i> Delete user
+                                                                        </a>
+                                                                    </div>
                                                             </td>
                                                         </tr>
 
@@ -131,11 +146,16 @@
                                                                     
                                                                 </td>
                                                                 <td>
-                                                                        <div class="publish">
-                                                                                <a class="btn add-btn" href="#" role="button">
-                                                                                    Disable
-                                                                                </a>
-                                                                            </div>
+                                                                    <div class="inline-button-block">
+                                                                    <a class="btn default-btn green" href="#" role="button">
+                                                                        <i class="fas fa-reply"></i> Resend invitation
+                                                                        </a>
+
+                                                                          <a class="btn default-btn red" href="#" role="button">
+                                                                          <i class="fas fa-trash-alt"></i> Delete user
+                                                                        </a>
+                                                                    </div>
+                                                                
                                                                 </td>
                                                             </tr>
                                                 

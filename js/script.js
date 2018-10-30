@@ -85,7 +85,7 @@ var myChart = new Chart(ctx, {
         padding: {
             left: 0,
             right: 0,
-            top: 0,
+            top: 250,
             bottom: 0
         }
     }

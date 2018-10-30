@@ -1,5 +1,5 @@
 body {
-    background-color: #f2f3f8;
+    background-color: #fbfbfb;
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
@@ -306,7 +306,7 @@ textarea {
     border: transparent;
     color: #fff;
     padding: 8px 30px;
-    font-size: 16px;
+    font-size: 14px;
     box-shadow: 0 2px 2px 0 rgba(0, 188, 212, .14), 0 3px 1px -2px rgba(0, 188, 212, .2), 0 1px 5px 0 rgba(0, 188, 212, .12);
     -webkit-box-shadow: 0 2px 2px 0 rgba(0, 188, 212, .14), 0 3px 1px -2px rgba(0, 188, 212, .2), 0 1px 5px 0 rgba(0, 188, 212, .12);
     -moz-box-shadow: 0 2px 2px 0 rgba(0, 188, 212, .14), 0 3px 1px -2px rgba(0, 188, 212, .2), 0 1px 5px 0 rgba(0, 188, 212, .12);
@@ -325,7 +325,7 @@ textarea {
     -webkit-transition: .3s all linear;
 }
 .default-btn.outline:hover{
-    
+    transition: .3s all linear;
 }
 .default-btn:hover {
     background-color: #3f918d;
@@ -891,6 +891,7 @@ table td {
 .table-title p{
     color: #aaa;
     font-size: 14px;
+    line-height: 20px;
 }
 .table-light-bg {
     background-color: #e9ecef;
@@ -1899,4 +1900,38 @@ td p {
 }
 .dashboard-block{
     padding: 45px 0;
+}
+.green{
+    background-color: #4CAF50;
+    border: transparent;
+    transition:.3s all linear;
+    box-shadow: none;
+}
+.green:hover{
+    background-color: #3d9041;
+}
+.red{
+    background-color: #F44336;
+    border: transparent;
+    transition:.3s all linear;
+    box-shadow: none;
+}
+.red:hover{
+    background-color: #dc3a2e;
+}
+.orange{
+    background-color: #ff9800;
+    border: transparent;
+    transition:.3s all linear;
+    box-shadow: none;
+
+}
+.orange:hover{
+    background-color: #e28906;
+}
+.inline-button-block a.btn{
+    margin: 0 5px;
+}
+.inline-button-block{
+    margin: 0 -5px;
 }

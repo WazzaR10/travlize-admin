@@ -10,7 +10,7 @@
  <!-- Page Content -->
  <div id="page-content-wrapper" class="dashboard">
             <div class="dashboard-block">
-                <div class="container-fluid">
+                <div class="container-fluid px-0">
                     <div class="row">
                         <div class="col-md-3">
                             <div class="white-box">
@@ -128,7 +128,7 @@
                                                 <div class="container-fluid px-0">
                                                     <div class="row">
                                                         <div class="col-lg-12">
-                                                            <h5>Create packages</h5>
+                                                            <h5>Booking stats</h5>
                                                         </div>
                         
                                                     </div>
@@ -152,7 +152,9 @@
 
 
 
-</div>
+ </div>
+
+ 
 <?php require_once('scripts.php');?>
 
 </body>

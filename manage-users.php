@@ -92,11 +92,18 @@
                                                                     
                                                                 </td>
                                                                 <td>
-                                                                        <div class="publish">
-                                                                                <a class="btn add-btn" href="#" role="button">
-                                                                                    Disable
+
+                                                                               <div class="inline-button-block">
+                                                                                <a class="btn default-btn orange" href="#" role="button" data-toggle="modal" data-target="#changeRole">
+                                                                                  <i class="fas fa-user-circle"></i> Change role
                                                                                 </a>
-                                                                            </div>
+
+                                                                                <a class="btn default-btn red" href="#" role="button" data-toggle="modal" data-target="#disableUser">
+                                                                                <i class="fas fa-times-circle"></i> Disable
+                                                                                </a>
+                                                                                </div>
+                                                                                 
+                                                                            
                                                                 </td>
                                                             </tr>
                                                             
@@ -112,12 +119,15 @@
                                                                         </div>
                                                                         </td>
                                                                     <td>
-                                                                            <div class="publish">
-                                                                                    <a class="btn add-btn" href="#" role="button">
-                                                                                        Enable
-                                                                                    </a>
+                                                                    <div class="inline-button-block">
+                                                                                <a class="btn default-btn orange" href="#" role="button">
+                                                                                  <i class="fas fa-user-circle"></i> Change role
+                                                                                </a>
+
+                                                                                <a class="btn default-btn green" href="#" role="button">
+                                                                                <i class="fas fa-check-circle"></i> Enable
+                                                                                </a>
                                                                                 </div>
-                            
                                                                     </td>
                                                                 </tr>
                                                            
@@ -136,12 +146,15 @@
                                                                             
                                                                         </td>
                                                                         <td>
-                                                                                <div class="publish">
-                                                                                        <a class="btn add-btn" href="#" role="button">
-                                                                                            Disable
-                                                                                        </a>
-                                                                                    </div>
-                                                                        </td>
+                                                                        <div class="inline-button-block">
+                                                                                <a class="btn default-btn orange" href="#" role="button">
+                                                                                  <i class="fas fa-user-circle"></i> Change role
+                                                                                </a>
+
+                                                                                <a class="btn default-btn red" href="#" role="button">
+                                                                                <i class="fas fa-times-circle"></i> Disable
+                                                                                </a>
+                                                                                </div>
                                                                     </tr>
                                                                     
                                                                     <tr>
@@ -158,11 +171,16 @@
                                                                                 </div>
                                                                                 </td>
                                                                             <td>
-                                                                                    <div class="publish">
-                                                                                            <a class="btn add-btn" href="#" role="button">
-                                                                                                Enable
-                                                                                            </a>
-                                                                                        </div>
+                                                                                <div class="inline-button-block">
+                                                                                <a class="btn default-btn orange" href="#" role="button">
+                                                                                  <i class="fas fa-user-circle"></i> Change role
+                                                                                </a>
+
+                                                                                <a class="btn default-btn green" href="#" role="button">
+                                                                                <i class="fas fa-check-circle"></i> Enable
+                                                                                </a>
+                                                                                </div>
+                                                                          
                                     
                                                                             </td>
                                                                         </tr>    
@@ -204,7 +222,60 @@
         </div>
         <!-- /#page-content-wrapper -->
 
+    <div class="modal fade show" id="changeRole" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Change role</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-modified">
+                        <form action="">
+                            <div class="form-group">
+                            <select class="custom-select" id="inputGroupSelect03" aria-label="Example select with button addon">
+                                    <option selected="">Select roles</option>
+                                    <option value="1">User</option>
+                                    <option value="2">Admin</option>
+                                    <option value="3">Customer</option>
+                                    
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                </div>
 
+                <div class="modal-footer">
+                    <button type="button" class="btn default-btn">Save</button>
+                    <button type="button" class="btn default-btn outline" data-dismiss="modal" aria-label="Close">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade show" id="disableUser" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Disable user</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>If you disable the user, this user will not be able to Login.</p>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn default-btn">Disable</button>
+                    <button type="button" class="btn default-btn outline" data-dismiss="modal" aria-label="Close">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </div>
 <?php require_once('scripts.php');?>
