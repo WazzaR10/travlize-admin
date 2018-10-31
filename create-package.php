@@ -1619,6 +1619,258 @@
 
 
 </div>
+
+   <!-- Add attraction modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add attractions</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+
+                        <div class="form-modified">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="inputPassword" placeholder="Attraction title">
+                            </div>
+
+                            <div class="form-group">
+                                <textarea name="" id="" placeholder="Enter description"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <select class="custom-select" id="inputGroupSelect03" aria-label="Example select with button addon">
+                                    <option selected="">Attraction type</option>
+                                    <option value="1">Hard</option>
+                                    <option value="2">Average</option>
+                                    <option value="3">Normal</option>
+                                    <option value="3">Easy</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="inputPassword" placeholder="Any links if availabel*">
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+
+                    <button type="button" class="btn default-btn">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Add attraction modal end-->
+
+
+    <!-- View attraction modal -->
+    <div class="modal fade" id="viewAttraction" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end attraction modal -->
+
+
+    <!-- Browse image modal -->
+    <!-- Modal -->
+
+    <div class="modal fade" id="browseImage" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Browse image</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-modified">
+                        <div class="input-group mb-4">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="inputGroupFile02">
+                                <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Choose
+                                    file</label>
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="inputPassword" placeholder="Image title">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn default-btn">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Browse image modal ends -->
+
+
+
+    <!-- Publish modal -->
+    <div class="modal fade" id="confirm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Are you sure?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="confirmation-block">
+                        <p>Do you really want to publish this review?This process can't be undone.</p>
+                        <button type="button" class="btn default-btn">Yes</button>
+                        <button type="button" class="btn default-btn outline">No</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Publish modal ends -->
+
+
+    <!-- Review modal -->
+    <div class="modal fade" id="review-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Review</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="review-block">
+
+                        <div class="review-image">
+                            <img src="img/user.jpg" alt="">
+                        </div>
+                        <div class="review-name">
+                            <h5> James Harold</h5>
+                            <p> jamesharold@email.com</p>
+                        </div>
+                        <div class="review-date">
+                            <p>From <span>England</span> on <span>12-08-2018</span> </p>
+
+                        </div>
+                        <div class="review-text">
+                            <p>
+                                “We completed this trek in late Sept. / early Oct. We did this trek as a family ( 2
+                                adults
+                                and 2 young children (12yo and 9yo). The trek was a lot of fun! Certainly a medium
+                                difficulty - but doable by just about anyone! Spectacular!”
+                            </p>
+                        </div>
+
+                        <div class="rating-block">
+                            <p>Rating</p>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="modal-footer">
+                    <div class="publish-block">
+                        <button type="button" class="btn default-btn"><i class="fas fa-check"></i> Publish</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Review modal ends -->
+
+
+    <!-- Add segment -->
+    <div class="modal fade" id="addSegment" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add segment</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-modified">
+                        <form action="">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="inputPassword" placeholder="Add segment">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn default-btn">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Add segment ends -->
+
+
+    <!-- Delete modal -->
+    <div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Are you sure?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="confirmation-block">
+                        <p>Do you really want to publish this review? This process can't be undone.</p>
+                        <button type="button" class="btn default-btn">Yes</button>
+                        <button type="button" class="btn default-btn outline">No</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Delete modal ends -->
 <?php require_once('scripts.php');?>
 
 </body>
