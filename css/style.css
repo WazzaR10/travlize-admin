@@ -1905,6 +1905,8 @@ td p {
     background-color: #4CAF50;
     border: transparent;
     transition:.3s all linear;
+    -webkit-transition:.3s all linear;
+    -moz-transition:.3s all linear;
     box-shadow: none;
 }
 .green:hover{
@@ -1914,6 +1916,8 @@ td p {
     background-color: #F44336;
     border: transparent;
     transition:.3s all linear;
+    -webkit-transition:.3s all linear;
+    -moz-transition:.3s all linear;
     box-shadow: none;
 }
 .red:hover{
@@ -1923,11 +1927,24 @@ td p {
     background-color: #ff9800;
     border: transparent;
     transition:.3s all linear;
+    -webkit-transition:.3s all linear;
+    -moz-transition:.3s all linear;
     box-shadow: none;
 
 }
 .orange:hover{
     background-color: #e28906;
+}
+.cancel{
+    background-color: #a7a7a7;
+    border: transparent;
+    transition:.3s all linear;
+    transition:.3s all linear;
+    -moz-transition:.3s all linear;
+    box-shadow: none;
+}
+.cancel:hover{
+    background-color: #7b7b7b;
 }
 .inline-button-block a.btn{
     margin: 0 5px;

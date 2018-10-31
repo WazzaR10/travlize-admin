@@ -153,7 +153,7 @@
                                     <h5>Manage packages</h5>
                                 </div>
                                 <div class="col-lg-3">
-                                    <a class="btn add-btn" href="create-package.html" role="button"><i class="fas fa-plus"></i> Add new
+                                    <a class="btn add-btn" href="create-package.html" data-toggle="modal" data-target="#createPackage"><i class="fas fa-plus"></i> Add new
                                         package</a>
                                 </div>
                             </div>
@@ -355,6 +355,32 @@
 
             </div>
 
+     <div class="modal fade show" id="createPackage" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Create package</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                <div class="form-modified">
+                        <form action="">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="inputPassword" placeholder="Enter package name">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn default-btn">Save</button>
+                    <button type="button" class="btn default-btn cancel" data-dismiss="modal" aria-label="Close">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 </div>
