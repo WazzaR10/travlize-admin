@@ -1,6 +1,8 @@
 @media(min-width:768px) {
-   
 
+    p{
+        font-size: 14px;
+    }
     #wrapper {
         padding-left: 250px;
     }
@@ -18,7 +20,7 @@
     }
 
     #page-content-wrapper {
-        padding: 25px 45px;
+        padding: 25px 31px;
         position: relative;
     }
 
@@ -26,13 +28,18 @@
         position: relative;
         margin-right: 0;
     }
-    
+
+    #menu-toggle {
+        padding: 6px 15px;
+        margin-right: 0;
+    }
 }
+
 @media(min-width:992px) {
     .login-box {
-        
-        padding:30px;
+
+        padding: 30px;
     }
 
-    
+
 }

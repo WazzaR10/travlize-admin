@@ -32,8 +32,8 @@ a{
     -webkit-transition: .3s all linear;
     -moz-transition: .3s all linear;
 }
-a:hover {
-    
+p{
+    font-size: 12px;
 }
 
 .btn.focus, .btn:focus {
@@ -57,6 +57,7 @@ a:hover {
 
 .navigation-wrapper nav {
     background-color: #f8f9fe;
+    padding: 8px 15px;
 }
 
 .login-block ::placeholder {
@@ -116,7 +117,21 @@ img {
 .logo-block img {
     width: 300px;
 }
-
+.top-navigation{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width:100%;
+}
+#menu-toggle{
+    margin-right: 15px;
+    padding: 0;
+}
 .entry-banner {
     height: 100vh;
 }
@@ -306,7 +321,7 @@ textarea {
     border: transparent;
     color: #fff;
     padding: 8px 30px;
-    font-size: 14px;
+    font-size: 16px;
     box-shadow: 0 2px 2px 0 rgba(0, 188, 212, .14), 0 3px 1px -2px rgba(0, 188, 212, .2), 0 1px 5px 0 rgba(0, 188, 212, .12);
     -webkit-box-shadow: 0 2px 2px 0 rgba(0, 188, 212, .14), 0 3px 1px -2px rgba(0, 188, 212, .2), 0 1px 5px 0 rgba(0, 188, 212, .12);
     -moz-box-shadow: 0 2px 2px 0 rgba(0, 188, 212, .14), 0 3px 1px -2px rgba(0, 188, 212, .2), 0 1px 5px 0 rgba(0, 188, 212, .12);
@@ -402,7 +417,7 @@ textarea {
 #page-content-wrapper {
     width: 100%;
     position: absolute;
-    padding: 15px;
+    padding:20px 15px;
 }
 
 .sidebar-nav-item .dropdown-menu.show {
@@ -638,16 +653,31 @@ textarea {
     padding: 10px;
     border: none;
     background-color: #e9ecef;
+    font-size: 14px;
 }
 
 .form-modified .select2-container--default .select2-selection--multiple .select2-selection__rendered {
     padding: 0;
 }
-
+.form-modified .select2-selection--multiple .select2-selection__rendered .select2-search{
+    width: 100%;
+}
 .form-modified .select2-container .select2-search--inline .select2-search__field {
     margin-top: 0;
+    width: 100% !important;
 }
-
+.form-modified .select2-container--default .select2-selection--multiple .select2-selection__choice__remove{
+    width: 15px;
+    height: 15px;
+    text-align: center;
+}
+.form-modified .select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover{
+    color: #fff;
+    background-color: #63cac5;
+   
+    border-radius: 50%;
+    line-height: 13px;
+}
 .form-button {
     padding: 25px 0 0px 0;
 }
@@ -1219,7 +1249,7 @@ a.dropdown-toggle::after {
 }
 
 .tabs-block .top-tab .nav-item {
-    border-right: 1px solid #ced4da;
+    border-right:1px solid #dbdbdb;
 }
 
 .tabs-block .nav-item:last-of-type {
@@ -1247,8 +1277,8 @@ a.dropdown-toggle::after {
 }
 
 .tabs-block .nav-tabs {
-    border-top: 1px solid #dee2e6;
-    border-bottom: 1px solid #dee2e6;
+    border-top: 1px solid #e9ecef;
+    border-bottom: 1px solid #e9ecef;
 }
 
 .tab-content-wrapper {
@@ -1291,7 +1321,9 @@ a.dropdown-toggle::after {
     font-weight: 400;
     color: #aaa;
 }
-
+.tabs-block .itinerary-tab-header .nav-link:hover{
+    color: #63cac5;
+}
 .tabs-block .itinerary-tab-header .nav-link.active {
     color: #63cac5;
     border-bottom: 2px solid #63cac5;
@@ -1446,7 +1478,24 @@ a.dropdown-toggle::after {
 .form-modified .bootstrap-select .dropdown-toggle .filter-option-inner-inner {
     color: #b0b0b0;
 }
-
+.form-modified .select2-container{
+   width:100% !important;
+}
+.form-modified .select2-container--default .select2-selection--single .select2-selection__rendered{
+    line-height: 50px;
+    color: #aaa;
+    font-size: 14px;
+}
+.form-modified .select2-container--default .select2-selection--single .select2-selection__arrow{
+    height: 50px;
+}
+.form-modified .select2-container .select2-selection--single{
+    height: auto;
+    box-shadow: 0 1px 3px rgba(50, 50, 93, .15), 0 1px 0 rgba(0, 0, 0, .02);
+    -webkit-box-shadow: 0 1px 3px rgba(50, 50, 93, .15), 0 1px 0 rgba(0, 0, 0, .02);
+    -moz-box-shadow: 0 1px 3px rgba(50, 50, 93, .15), 0 1px 0 rgba(0, 0, 0, .02);
+    border:0;
+}
 .form-modified .bootstrap-select {
     border-radius: 4px;
     transition: box-shadow .15s linear;
@@ -1951,4 +2000,15 @@ td p {
 }
 .inline-button-block{
     margin: 0 -5px;
+}
+.info-text p{
+    margin-bottom: 0;
+    margin-top: 10px;
+    color: #63cac5;
+    font-weight: 600;
+}
+.rounded-btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
 }

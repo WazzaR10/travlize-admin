@@ -1,15 +1,15 @@
 <!doctype html>
 <html lang="en">
-    <?php require_once('head.php');?>
-    
+<?php require_once('head.php');?>
+
 <body>
 
-<div id="wrapper">
-<?php require_once('sidebar.php');?>
-<?php require_once('top-nav.php');?>
- <!-- Page Content -->
- <div id="page-content-wrapper" class="dashboard">
- <div class="breadcrumb-block">
+    <div id="wrapper">
+        <?php require_once('sidebar.php');?>
+        <?php require_once('top-nav.php');?>
+        <!-- Page Content -->
+        <div id="page-content-wrapper" class="dashboard">
+            <div class="breadcrumb-block">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item">
@@ -92,207 +92,470 @@
 
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="general" role="tabpanel" aria-labelledby="general-tab">
-                                <div class="tab-content-wrapper">
-                                    <div class="heading">
-                                        <h5><i class="fas fa-align-justify"></i> General</h5>
-                                    </div>
-                                    <div class="main-content">
-                                        <form>
-                                            <div class="form-modified">
-                                                <div class="form-group row align-items-center">
-
-                                                    <label for="staticEmail" class="col-sm-2 col-form-label">Enter
-                                                        destination</label>
-                                                    <div class="col-sm-10">
-                                                        <input type="text" class="form-control" id="inputPassword"
-                                                            placeholder="Destination name">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row align-items-center">
-                                                    <label for="inputPassword" class="col-sm-2 col-form-label">Teaser
-                                                        title</label>
-                                                    <div class="col-sm-10">
-                                                        <input type="text" class="form-control" id="inputPassword"
-                                                            placeholder="Enter teaser title">
-                                                    </div>
-                                                </div>
-
-                                                <div class="form-group row align-items-center">
-                                                    <label for="inputPassword" class="col-sm-2 col-form-label">Tour
-                                                        type</label>
-                                                    <div class="col-sm-10">
-                                                        <select class="selectpicker">
-                                                            <option selected="">Select tour type</option>
-                                                            <option value="1">Day tours</option>
-                                                            <option value="2">Multiday tours</option>
-                                                            <option value="3">Group tours</option>
-                                                            <option value="3">Private tours</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-
-                                                <div class="form-group row align-items-center">
-                                                    <label for="inputPassword" class="col-sm-2 col-form-label">Difficulty
-                                                        level</label>
-                                                    <div class="col-sm-10">
-                                                        <select class="selectpicker">
-                                                            <option selected="">Select difficulty level</option>
-                                                            <option value="1">Hard</option>
-                                                            <option value="2">Average</option>
-                                                            <option value="3">Normal</option>
-                                                            <option value="3">Easy</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-
-                                                <div class="form-group row align-items-center">
-                                                    <label for="inputPassword" class="col-sm-2 col-form-label">Altitude</label>
-                                                    <div class="col-sm-5">
-                                                        <input type="text" class="form-control" id="inputPassword"
-                                                            placeholder="Altitude in meter">
-                                                    </div>
-                                                    <div class="col-sm-5">
-                                                        <input type="text" class="form-control" id="inputPassword"
-                                                            placeholder="Altitude in feet">
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </form>
-                                    </div>
-
-                                    <div class="heading">
-                                        <h5><i class="fas fa-dollar-sign"></i> Price and Duration</h5>
-                                    </div>
-                                    <div class="main-content">
-                                        <form>
-                                            <div class="form-modified">
-                                                <div class="form-group row align-items-center">
-
-                                                    <label for="staticEmail" class="col-sm-2 col-form-label">Suitable
-                                                        seasons</label>
-                                                    <div class="col-sm-10">
-                                                        <select class="selectpicker">
-                                                            <option selected="">Select suitable seasons</option>
-                                                            <option value="1">Day tours</option>
-                                                            <option value="2">Multiday tours</option>
-                                                            <option value="3">Group tours</option>
-                                                            <option value="3">Private tours</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row align-items-center">
-                                                    <label for="inputPassword" class="col-sm-2 col-form-label">Min-Max
-                                                        people</label>
-                                                    <div class="col-sm-5">
-                                                        <input type="text" class="form-control" id="inputPassword"
-                                                            placeholder="Minimum">
-                                                    </div>
-                                                    <div class="col-sm-5">
-                                                        <input type="text" class="form-control" id="inputPassword"
-                                                            placeholder="Maximum">
-                                                    </div>
-                                                </div>
-
-                                                <div class="form-group row align-items-center">
-                                                    <label for="inputPassword" class="col-sm-2 col-form-label">Duration</label>
-                                                    <div class="col-sm-5">
-                                                        <input type="text" class="form-control" id="inputPassword"
-                                                            placeholder="Nights">
-                                                    </div>
-                                                    <div class="col-sm-5">
-                                                        <input type="text" class="form-control" id="inputPassword"
-                                                            placeholder="Days">
-                                                    </div>
-                                                </div>
-
-                                                <div class="form-group row align-items-center">
-                                                    <label for="inputPassword" class="col-sm-2 col-form-label">Price
-                                                        basis</label>
-                                                    <div class="col-sm-10">
-                                                        <select class="selectpicker">
-                                                            <option selected="">Select price basis</option>
-                                                            <option value="1">Twin sharing basis</option>
-                                                            <option value="2">Average</option>
-                                                            <option value="3">Normal</option>
-                                                            <option value="3">Easy</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-
-                                                <div class="form-group row align-items-center">
-                                                    <label for="inputPassword" class="col-sm-2 col-form-label">Desinations
-                                                        covered by this trek</label>
-                                                    <div class="col-sm-10">
-                                                        <select class="js-example-basic-multiple" name="states[]"
-                                                            multiple="multiple" style="width:100%">
-
-                                                            <option value="1">Annapurna region</option>
-                                                            <option value="2">Tilicho</option>
-                                                            <option value="3">Manang-mustang region</option>
-                                                            <option value="3">Shey-Phoksundo</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-
-
-                                            </div>
-
-                                        </form>
-                                    </div>
-
-                                    <div class="heading">
-                                        <h5><i class="fas fa-exclamation-circle"></i> Important notes</h5>
-                                    </div>
-                                    <div class="main-content">
-                                        <form>
-                                            <div class="form-modified">
-                                                <div class="form-group row align-items-center">
-
-                                                    <label for="staticEmail" class="col-sm-2 col-form-label">Highlights</label>
-                                                    <div class="col-sm-10">
-                                                        <input type="text" class="form-control" id="inputPassword"
-                                                            placeholder="Write some of the highlights of this package">
-                                                    </div>
-                                                </div>
-
-                                                <div class="form-group row">
-
-                                                    <label for="staticEmail" class="col-sm-2 col-form-label">Cancelation
-                                                        info</label>
-                                                    <div class="col-sm-10">
-                                                        <textarea name="" id="" placeholder="Write cancelation information"></textarea>
-                                                    </div>
-                                                </div>
-
-
-                                                <div class="form-group row">
-
-                                                    <label for="staticEmail" class="col-sm-2 col-form-label">Extra
-                                                        info</label>
-                                                    <div class="col-sm-10">
-                                                        <textarea name="" id="" placeholder="Write extra information"></textarea>
-                                                    </div>
-                                                </div>
-
+                                <div class="itinerary-tab-header">
+                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#day1"
+                                                role="tab" aria-controls="home" aria-selected="true">
+                                                <i class="fas fa-align-justify"></i> General
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#day2" role="tab"
+                                                aria-controls="profile" aria-selected="false">
+                                                <i class="fas fa-dollar-sign"></i> Price and Duration
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#day5" role="tab"
+                                                aria-controls="contact" aria-selected="false">
+                                                <i class="fas fa-map-marker-alt"></i> Destinations covered
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#day4" role="tab"
+                                                aria-controls="contact" aria-selected="false">
+                                                <i class="fas fa-magic"></i> Highlights
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#day3" role="tab"
+                                                aria-controls="contact" aria-selected="false">
+                                                <i class="fas fa-exclamation-circle"></i> Important notes
+                                            </a>
+                                        </li>
+                                        
+                                    </ul>
+                                    <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="day1" role="tabpanel"
+                                            aria-labelledby="home-tab">
+                                            <div class="container-fluid">
                                                 <div class="content-block">
-                                                    <div class="row">
-                                                        <div class="col-md-10 offset-md-2">
-                                                            <button class="btn default-btn save-btn" type="submit">Save</button>
+                                                    <form>
+                                                        <div class="form-modified">
+                                                            <div class="form-group row">
+
+                                                                <label for="staticEmail" class="col-sm-2 col-form-label">Enter
+                                                                    destination</label>
+                                                                <div class="col-sm-10">
+                                                                    <input type="text" class="form-control" id="inputPassword"
+                                                                        placeholder="Destination name">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="form-group row">
+
+                                                                <label for="staticEmail" class="col-sm-2 col-form-label">Enter
+                                                                    description</label>
+                                                                <div class="col-sm-10">
+                                                                    <textarea name="editor" id="" cols="30" rows="4"
+                                                                        class="form-control"></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="inputPassword" class="col-sm-2 col-form-label">Teaser
+                                                                    title</label>
+                                                                <div class="col-sm-10">
+                                                                    <input type="text" class="form-control" id="inputPassword"
+                                                                        placeholder="Enter teaser title">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="form-group row">
+                                                                <label for="inputPassword" class="col-sm-2 col-form-label">Tour
+                                                                    type</label>
+                                                                <div class="col-sm-10">
+                                                                    <select class="selectpicker">
+                                                                        <option selected="">Select tour type</option>
+                                                                        <option value="1">Day tours</option>
+                                                                        <option value="2">Multiday tours</option>
+                                                                        <option value="3">Group tours</option>
+                                                                        <option value="3">Private tours</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="form-group row">
+                                                                <label for="inputPassword" class="col-sm-2 col-form-label">Difficulty
+                                                                    level</label>
+                                                                <div class="col-sm-10">
+                                                                    <select class="selectpicker">
+                                                                        <option selected="">Select difficulty level</option>
+                                                                        <option value="1">Hard</option>
+                                                                        <option value="2">Average</option>
+                                                                        <option value="3">Normal</option>
+                                                                        <option value="3">Easy</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="form-group row">
+                                                                <label for="inputPassword" class="col-sm-2 col-form-label">Altitude</label>
+                                                                <div class="col-sm-5">
+                                                                    <input type="text" class="form-control" id="inputPassword"
+                                                                        placeholder="Altitude in meter">
+                                                                </div>
+                                                                <div class="col-sm-5">
+                                                                    <input type="text" class="form-control" id="inputPassword"
+                                                                        placeholder="Altitude in feet">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="content-block">
+                                                                <div class="row">
+                                                                    <div class="col-md-10 offset-md-2">
+                                                                        <button class="btn default-btn save-btn" type="submit">Save</button>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                    </form>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="tab-pane fade" id="day2" role="tabpanel" aria-labelledby="profile-tab">
+                                            <div class="container-fluid">
+                                                <div class="content-block">
+                                                    <form>
+                                                        <div class="form-modified">
+                                                            <div class="form-group row">
+
+                                                                <label for="staticEmail" class="col-sm-2 col-form-label">Suitable
+                                                                    seasons</label>
+                                                                <div class="col-sm-10">
+                                                                    <select class="js-example-basic-multiple-suitable"
+                                                                        name="" multiple="multiple" style="width:100%">
+                                                                        <option value="1">Day tours</option>
+                                                                        <option value="2">Something tours</option>
+                                                                        <option value="3">Manang-mustang region</option>
+                                                                        <option value="3">Shey-Phoksundo</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="inputPassword" class="col-sm-2 col-form-label">Min-Max
+                                                                    people</label>
+                                                                <div class="col-sm-5">
+                                                                    <input type="text" class="form-control" id="inputPassword"
+                                                                        placeholder="Minimum">
+                                                                </div>
+                                                                <div class="col-sm-5">
+                                                                    <input type="text" class="form-control" id="inputPassword"
+                                                                        placeholder="Maximum">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="form-group row">
+                                                                <label for="inputPassword" class="col-sm-2 col-form-label">Duration</label>
+                                                                <div class="col-sm-5">
+                                                                    <input type="text" class="form-control" id="inputPassword"
+                                                                        placeholder="Nights">
+                                                                </div>
+                                                                <div class="col-sm-5">
+                                                                    <input type="text" class="form-control" id="inputPassword"
+                                                                        placeholder="Days">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="form-group row">
+                                                                <label for="inputPassword" class="col-sm-2 col-form-label">Price
+                                                                    basis</label>
+                                                                <div class="col-sm-10">
+                                                                    <select class="selectpicker">
+                                                                        <option selected="">Select price basis</option>
+                                                                        <option value="1" data-icon="glyphicon glyphicon-eye-open"
+                                                                            data-subtext="petrification">Twin sharing
+                                                                            basis</option>
+                                                                        <option value="2">Average</option>
+                                                                        <option value="3">Normal</option>
+                                                                        <option value="3">Easy</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="content-block">
+                                                                <div class="row">
+                                                                    <div class="col-md-10 offset-md-2">
+                                                                        <button class="btn default-btn save-btn" type="submit">Save</button>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="day3" role="tabpanel" aria-labelledby="contact-tab">
+                                            <div class="container-fluid">
+                                                <div class="content-block">
+                                                    <form>
+                                                        <div class="form-modified">
+
+                                                            <div class="form-group row">
+
+                                                                <label for="staticEmail" class="col-sm-2 col-form-label">Cancelation
+                                                                    info</label>
+                                                                <div class="col-sm-10">
+                                                                    <textarea name="" id="" placeholder="Write cancelation information"></textarea>
+                                                                </div>
+                                                            </div>
+
+
+                                                            <div class="form-group row">
+
+                                                                <label for="staticEmail" class="col-sm-2 col-form-label">Extra
+                                                                    info</label>
+                                                                <div class="col-sm-10">
+                                                                    <textarea name="" id="" placeholder="Write extra information"></textarea>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="content-block">
+                                                                <div class="row">
+                                                                    <div class="col-md-10 offset-md-2">
+                                                                        <button class="btn default-btn save-btn" type="submit">Save</button>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+
+                                                        </div>
+
+
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="day4" role="tabpanel" aria-labelledby="contact-tab">
+                                            <div class="container-fluid">
+                                                <div class="content-block">
+                                                    <div class="row align-content-center">
+                                                        <div class="col-lg-10">
+                                                            <form>
+                                                                <div class="form-modified">
+                                                                    <div class="form-group row">
+
+                                                                        <label for="staticEmail" class="col-sm-2 col-form-label">
+                                                                            Highlights</label>
+                                                                        <div class="col-sm-8">
+                                                                            <textarea name="" id="" placeholder="eg. Special highlights of the place"></textarea>
+                                                                        </div>
+                                                                        
+                                                            <div class="col-sm-2">
+                                                                <div class="form-group">
+                                                                    <select class="selectpicker">
+                                                                        <option selected="">Select icons</option>
+                                                                        <option value="1">Plane</option>
+                                                                        <option value="2">Hotel</option>
+                                                                        <option value="3">Group tours</option>
+                                                                        <option value="3">Private tours</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                                    </div>
+
+                                                                    <div class="form-group row">
+                                                                        <div class="col-sm-10 offset-2">
+                                                                            <div class="includes">
+                                                                                <div class="includes-list">
+                                                                                    <div class="includes-list-item">
+                                                                                        <div class="row">
+                                                                                            <div class="col-lg-9">
+                                                                                                <p>Daily seasonal fresh
+                                                                                                    fruits as
+                                                                                                    per the
+                                                                                                    availability</p>
+                                                                                            </div>
+                                                                                            <div class="col-lg-3">
+                                                                                                <div class="includes-action">
+
+                                                                                                    <button type="button"
+                                                                                                        class="btn">
+                                                                                                        <i class="fas fa-pen"></i>
+                                                                                                    </button>
+                                                                                                    <button type="button"
+                                                                                                        class="btn">
+                                                                                                        <i class="fas fa-trash-alt"></i>
+                                                                                                    </button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="includes-list-item">
+                                                                                        <div class="row">
+                                                                                            <div class="col-lg-9">
+                                                                                                <p>Necessary paper
+                                                                                                    works, all
+                                                                                                    government and
+                                                                                                    local taxes</p>
+                                                                                            </div>
+                                                                                            <div class="col-lg-3">
+                                                                                                <div class="includes-action">
+
+                                                                                                    <button type="button"
+                                                                                                        class="btn">
+                                                                                                        <i class="fas fa-pen"></i>
+                                                                                                    </button>
+                                                                                                    <button type="button"
+                                                                                                        class="btn">
+                                                                                                        <i class="fas fa-trash-alt"></i>
+                                                                                                    </button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="includes-list-item">
+                                                                                        <div class="row">
+                                                                                            <div class="col-lg-9">
+                                                                                                <p>Airport pickup and
+                                                                                                    drop-off (on
+                                                                                                    request) services
+                                                                                                    in a private
+                                                                                                    vehicle</p>
+                                                                                            </div>
+                                                                                            <div class="col-lg-3">
+                                                                                                <div class="includes-action">
+
+                                                                                                    <button type="button"
+                                                                                                        class="btn">
+                                                                                                        <i class="fas fa-pen"></i>
+                                                                                                    </button>
+                                                                                                    <button type="button"
+                                                                                                        class="btn">
+                                                                                                        <i class="fas fa-trash-alt"></i>
+                                                                                                    </button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                    <div class="includes-list-item">
+                                                                                        <div class="row">
+                                                                                            <div class="col-lg-9">
+                                                                                                <p>Down jackets,
+                                                                                                    sleeping bags and
+                                                                                                    duffel bags (down
+                                                                                                    jackets,
+                                                                                                    sleeping bags and
+                                                                                                    duffel bags
+                                                                                                    are to be returned
+                                                                                                    after the
+                                                                                                    completion of the
+                                                                                                    trip</p>
+                                                                                            </div>
+                                                                                            <div class="col-lg-3">
+                                                                                                <div class="includes-action">
+
+                                                                                                    <button type="button"
+                                                                                                        class="btn">
+                                                                                                        <i class="fas fa-pen"></i>
+                                                                                                    </button>
+                                                                                                    <button type="button"
+                                                                                                        class="btn">
+                                                                                                        <i class="fas fa-trash-alt"></i>
+                                                                                                    </button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+
+
+
+                                                                </div>
+
+                                                            </form>
+                                                        </div>
+                                                        <div class="col-lg-2">
+                                                            <a class="btn btn-sm add-btn" href="#" role="button">
+                                                                Save
+                                                            </a>
                                                         </div>
                                                     </div>
 
                                                 </div>
-
-
                                             </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="day5" role="tabpanel" aria-labelledby="contact-tab">
+                                            <div class="container-fluid">
+                                                <div class="content-block">
+                                                    <div class="row align-content-center">
+                                                        <div class="col-lg-10">
+                                                            <form>
+                                                                <div class="form-modified">
+                                                                    <div class="form-group row">
+                                                                        <label for="inputPassword" class="col-sm-2 col-form-label">Destinations covered</label>
+                                                                        <div class="col-sm-10">
+                                                                            <select class="selectpicker">
+                                                                                <option selected="">Select destinations covered</option>
+                                                                                <option value="1">Annapurna Trek</option>
+                                                                                <option value="2">Khaptad Trek</option>
+                                                                                <option value="3">Group tours</option>
+                                                                                <option value="3">Private tours</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="form-group row">
+                                                                        <div class="col-sm-10 offset-2">
+                                                                            <div class="includes">
+                                                                                <div class="includes-list">
+                                                                                    <div class="includes-list-item">
+                                                                                        <div class="row">
+                                                                                            <div class="col-lg-9">
+                                                                                                <p>Annapurna Base Camp</p>
+                                                                                            </div>
+                                                                                            <div class="col-lg-3">
+                                                                                                <div class="includes-action">
+
+                                                                                                    <button type="button"
+                                                                                                        class="btn">
+                                                                                                        <i class="fas fa-pen"></i>
+                                                                                                    </button>
+                                                                                                    <button type="button"
+                                                                                                        class="btn">
+                                                                                                        <i class="fas fa-trash-alt"></i>
+                                                                                                    </button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
 
 
-                                        </form>
+
+
+                                                                </div>
+
+                                                            </form>
+                                                        </div>
+                                                        <div class="col-lg-2">
+                                                            <a class="btn btn-sm add-btn" href="#" role="button">
+                                                                Save
+                                                            </a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-
-
                             </div>
                             <div class="tab-pane fade" id="itinerary" role="tabpanel" aria-labelledby="itinerary-tab">
                                 <div class="itinerary-tab-header">
@@ -319,7 +582,7 @@
                                                         <div class="col-md-10">
                                                             <form>
                                                                 <div class="form-modified">
-                                                                    <div class="form-group row align-items-center">
+                                                                    <div class="form-group row">
 
                                                                         <label for="staticEmail" class="col-sm-2 col-form-label">
                                                                             Segment title</label>
@@ -328,7 +591,7 @@
                                                                                 placeholder="Enter segment title">
                                                                         </div>
                                                                     </div>
-                                                                    <div class="form-group row align-items-center">
+                                                                    <div class="form-group row">
 
                                                                         <label for="staticEmail" class="col-sm-2 col-form-label">
                                                                             Title</label>
@@ -338,7 +601,7 @@
                                                                         </div>
                                                                     </div>
 
-                                                                    <div class="form-group row align-items-center">
+                                                                    <div class="form-group row">
 
                                                                         <label for="staticEmail" class="col-sm-2 col-form-label">Description
                                                                         </label>
@@ -347,16 +610,21 @@
                                                                         </div>
                                                                     </div>
 
-                                                                    <div class="form-group row align-items-center">
+                                                                    <div class="form-group row">
 
                                                                         <label for="staticEmail" class="col-sm-2 col-form-label">Duration
                                                                         </label>
-                                                                        <div class="col-sm-10">
-                                                                            <textarea name="" id="" placeholder="eg. 8 hours"></textarea>
+                                                                        <div class="col-sm-5">
+                                                                            <input type="text" class="form-control" id="inputPassword"
+                                                                                placeholder="Min duration">
+                                                                        </div>
+                                                                        <div class="col-sm-5">
+                                                                            <input type="text" class="form-control" id="inputPassword"
+                                                                                placeholder="Max duration">
                                                                         </div>
                                                                     </div>
 
-                                                                    <div class="form-group row align-items-center">
+                                                                    <div class="form-group row">
                                                                         <label for="inputPassword" class="col-sm-2 col-form-label">Altitude</label>
                                                                         <div class="col-sm-5">
                                                                             <input type="text" class="form-control" id="inputPassword"
@@ -371,87 +639,103 @@
                                                                     <div class="form-group row">
                                                                         <label for="inputPassword" class="col-sm-2 col-form-label">Add
                                                                             image*</label>
-                                                                        <div class="col-md-2">
-                                                                            <div class="itinerary-img-container">
-                                                                                <img src="img/image_placeholder.jpg"
-                                                                                    alt="">
-                                                                                <div class="upload-btn-wrapper">
-                                                                                    <button class="btn add-btn">Select
-                                                                                        image</button>
-                                                                                    <input type="file" name="myfile" />
-                                                                                </div>
+
+                                                                        <div class="col-lg-10">
+                                                                            <a class="btn btn-sm add-btn d-inline-block"
+                                                                                href="#" data-toggle="modal"
+                                                                                data-target="#browseImage"><i class="fas fa-plus"></i>
+                                                                                Browse
+                                                                            </a>
 
 
-                                                                            </div>
-
-                                                                        </div>
-                                                                        <div class="col-md-2">
-                                                                            <div class="itinerary-img-container">
-                                                                                <img src="img/image_placeholder.jpg"
-                                                                                    alt="">
-
-                                                                                <div class="row no-gutters">
-                                                                                    <div class="col-sm-6">
-                                                                                        <div class="remove-btn-wrapper">
-                                                                                            <button type="button" class="btn btn-xs default-btn">
-                                                                                                <i class="fas fa-times"></i>
-                                                                                            </button>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="col-sm-6">
-                                                                                        <div class="change-btn-wrapper">
-                                                                                            <button type="button" class="btn btn-xs default-btn">
-                                                                                                <i class="fas fa-pen"></i>
-                                                                                            </button>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-
-
-
-
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-md-2">
-                                                                            <div class="itinerary-img-container">
-                                                                                <img src="img/image_placeholder.jpg"
-                                                                                    alt="">
-                                                                                <div class="upload-btn-wrapper">
-                                                                                    <button class="btn add-btn">Select
-                                                                                        image</button>
-                                                                                    <input type="file" name="myfile" />
-                                                                                </div>
-
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-md-2">
-                                                                            <div class="itinerary-img-container">
-                                                                                <img src="img/image_placeholder.jpg"
-                                                                                    alt="">
-                                                                                <div class="upload-btn-wrapper">
-                                                                                    <button class="btn add-btn">Select
-                                                                                        image</button>
-                                                                                    <input type="file" name="myfile" />
-                                                                                </div>
-
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-md-2">
-                                                                            <div class="itinerary-img-container">
-                                                                                <img src="img/image_placeholder.jpg"
-                                                                                    alt="">
-                                                                                <div class="upload-btn-wrapper">
-                                                                                    <button class="btn add-btn">Select
-                                                                                        image</button>
-                                                                                    <input type="file" name="myfile" />
-                                                                                </div>
-
-                                                                            </div>
                                                                         </div>
 
                                                                     </div>
 
-                                                                    <div class="form-group row align-items-center">
+                                                                    <div class="form-group-row no-gutters">
+                                                                        <div class="col-lg-10 offset-2">
+                                                                            <div class="row">
+                                                                                <div class="col-lg-3">
+                                                                                    <div class="gallery-image-container">
+                                                                                        <img src="img/travel-2.jpg" alt="">
+                                                                                        <div class="overlay">
+                                                                                            <div class="middle">
+
+                                                                                                <button type="button"
+                                                                                                    class="btn btn-danger rounded-btn">
+                                                                                                    <i class="fas fa-trash-alt"></i>
+                                                                                                </button>
+
+                                                                                                <button type="button"
+                                                                                                    class="btn btn-success rounded-btn">
+                                                                                                    <i class="fas fa-image"></i>
+                                                                                                </button>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-lg-3">
+                                                                                    <div class="gallery-image-container">
+                                                                                        <img src="img/travel-2.jpg" alt="">
+                                                                                        <div class="overlay">
+                                                                                            <div class="middle">
+
+                                                                                                <button type="button"
+                                                                                                    class="btn btn-danger rounded-btn">
+                                                                                                    <i class="fas fa-trash-alt"></i>
+                                                                                                </button>
+
+                                                                                                <button type="button"
+                                                                                                    class="btn btn-success rounded-btn">
+                                                                                                    <i class="fas fa-image"></i>
+                                                                                                </button>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-lg-3">
+                                                                                    <div class="gallery-image-container">
+                                                                                        <img src="img/travel-2.jpg" alt="">
+                                                                                        <div class="overlay">
+                                                                                            <div class="middle">
+
+                                                                                                <button type="button"
+                                                                                                    class="btn btn-danger rounded-btn">
+                                                                                                    <i class="fas fa-trash-alt"></i>
+                                                                                                </button>
+
+                                                                                                <button type="button"
+                                                                                                    class="btn btn-success rounded-btn">
+                                                                                                    <i class="fas fa-image"></i>
+                                                                                                </button>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-lg-3">
+                                                                                    <div class="gallery-image-container">
+                                                                                        <img src="img/travel-2.jpg" alt="">
+                                                                                        <div class="overlay">
+                                                                                            <div class="middle">
+
+                                                                                                <button type="button"
+                                                                                                    class="btn btn-danger rounded-btn">
+                                                                                                    <i class="fas fa-trash-alt"></i>
+                                                                                                </button>
+
+                                                                                                <button type="button"
+                                                                                                    class="btn btn-success rounded-btn">
+                                                                                                    <i class="fas fa-image"></i>
+                                                                                                </button>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="form-group row">
 
                                                                         <label for="staticEmail" class="col-sm-2 col-form-label">
                                                                             Attractions</label>
@@ -470,7 +754,7 @@
                                                                         <div class="col-sm-10 offset-2">
                                                                             <div class="attraction-wrapper">
                                                                                 <div class="attraction-title">
-                                                                                    <div class="row align-items-center">
+                                                                                    <div class="row">
                                                                                         <div class="col-sm-9">
                                                                                             <h5>Paraglyding in pokhara</h5>
                                                                                         </div>
@@ -546,28 +830,24 @@
 
                                                             <label for="staticEmail" class="col-sm-2 col-form-label">
                                                                 Includes</label>
-                                                            <div class="col-sm-10">
+                                                            <div class="col-sm-8">
                                                                 <textarea name="" id="" placeholder="eg. Necessary paperworks and all government papers."></textarea>
                                                             </div>
-                                                            
+
+                                                            <div class="col-sm-2">
+                                                                <div class="form-group">
+                                                                    <select class="selectpicker">
+                                                                        <option selected="">Select icons</option>
+                                                                        <option value="1">Plane</option>
+                                                                        <option value="2">Hotel</option>
+                                                                        <option value="3">Group tours</option>
+                                                                        <option value="3">Private tours</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+
                                                         </div>
-
-                                                        
-
-
-
-
-                                                    </div>
-                                                </form>
-                                            </div>
-                                            <div class="col-md-2">
-                                                <a class="btn btn-sm add-btn" href="#" role="button">
-                                                    Save
-                                                </a>
-                                            </div>
-
-                                            <div class="col-md-12">
-                                                    <div class="form-group row">
+                                                        <div class="form-group row">
                                                             <div class="col-lg-10 offset-lg-2">
                                                                 <div class="includes-list">
                                                                     <div class="includes-list-item">
@@ -656,7 +936,16 @@
 
                                                             </div>
                                                         </div>
+                                                    </div>
+                                                </form>
                                             </div>
+                                            <div class="col-md-2">
+                                                <a class="btn btn-sm add-btn" href="#" role="button">
+                                                    Save
+                                                </a>
+                                            </div>
+
+
                                         </div>
                                     </div>
                                 </div>
@@ -671,23 +960,23 @@
                                                         <div class="form-group row">
 
                                                             <label for="staticEmail" class="col-sm-2 col-form-label">
-                                                                Excludes</label>
-                                                            <div class="col-sm-10">
+                                                                Includes</label>
+                                                            <div class="col-sm-8">
                                                                 <textarea name="" id="" placeholder="eg. Necessary paperworks and all government papers."></textarea>
                                                             </div>
-                                                            <!-- <div class="col-sm-2">
-                                                                        <select class="selectpicker">
-                                                                            <option selected="">Select icon</option>
-                                                                            <option value="1" data-icon="glyphicon-picture">
-                                                                                Plane
-                                                                            </option>
-                                                                            <option value="2">
-        
-                                                                            </option>
-                                                                            <option value="3">Group tours</option>
-                                                                            <option value="3">Private tours</option>
-                                                                        </select>
-                                                                    </div> -->
+
+                                                            <div class="col-sm-2">
+                                                                <div class="form-group">
+                                                                    <select class="selectpicker">
+                                                                        <option selected="">Select icons</option>
+                                                                        <option value="1">Plane</option>
+                                                                        <option value="2">Hotel</option>
+                                                                        <option value="3">Group tours</option>
+                                                                        <option value="3">Private tours</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+
                                                         </div>
 
                                                         <div class="form-group row">
@@ -800,31 +1089,24 @@
                                 <div class="container-fluid">
                                     <div class="content-block">
                                         <div class="row align-content-center">
-                                            <div class="col-md-10">
-                                                <form>
-                                                    <div class="form-modified">
-                                                        <div class="form-group row">
+                                            <div class="col-md-2">
+                                                <div class="form-modified">
+                                                    <div class="form-group">
 
-                                                            <label for="staticEmail" class="col-sm-2 col-form-label">
-                                                                Gallery</label>
-                                                            <div class="col-sm-10">
-                                                                <input type="text" class="form-control" id="inputPassword"
-                                                                    placeholder="Enter segment title">
-                                                            </div>
-
-                                                        </div>
-
-
-
-
+                                                        <label for="staticEmail" class="col-form-label">
+                                                            Gallery</label>
 
 
                                                     </div>
 
-                                                </form>
-
-                                                
-
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <div class="info-text">
+                                                    <p> <i class="fas fa-exclamation-circle"></i>
+                                                        Here,you can browse and add images for the gallery of the
+                                                        package.</p>
+                                                </div>
                                             </div>
                                             <div class="col-md-2">
                                                 <a class="btn btn-sm add-btn" href="#" data-toggle="modal" data-target="#browseImage"><i
@@ -834,71 +1116,79 @@
                                             </div>
 
                                             <div class="col-md-12">
-                                                    <div class="content-block">
-                                                            <div class="row">
-                                                                <div class="col-lg-4">
-                                                                    <div class="gallery-image-container">
-                                                                        <img src="img/travel-2.jpg" alt="">
-                                                                        <div class="overlay">
-                                                                            <div class="middle">
-                                                                                <button type="button" class="btn btn-primary">
-                                                                                    <i class="fas fa-pen"></i>
-                                                                                </button>
-        
-                                                                                <button type="button" class="btn btn-danger">
-                                                                                    <i class="fas fa-trash-alt"></i>
-                                                                                </button>
-        
-                                                                                <button type="button" class="btn btn-success">
-                                                                                    <i class="fas fa-image"></i>
-                                                                                </button>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-        
-                                                                </div>
-                                                                <div class="col-lg-4">
-                                                                    <div class="gallery-image-container">
-                                                                        <img src="img/travel-2.jpg" alt="">
-                                                                        <div class="overlay">
-                                                                            <div class="middle">
-                                                                                <button type="button" class="btn btn-primary">
-                                                                                    <i class="fas fa-pen"></i>
-                                                                                </button>
-        
-                                                                                <button type="button" class="btn btn-danger">
-                                                                                    <i class="fas fa-trash-alt"></i>
-                                                                                </button>
-        
-                                                                                <button type="button" class="btn btn-success">
-                                                                                    <i class="fas fa-image"></i>
-                                                                                </button>
-                                                                            </div>
-                                                                        </div>
+                                                <div class="content-block">
+                                                    <div class="row">
+                                                        <div class="col-lg-3">
+                                                            <div class="gallery-image-container">
+                                                                <img src="img/travel-2.jpg" alt="">
+                                                                <div class="overlay">
+                                                                    <div class="middle">
+
+                                                                        <button type="button" class="btn btn-danger rounded-btn">
+                                                                            <i class="fas fa-trash-alt"></i>
+                                                                        </button>
+
+                                                                        <button type="button" class="btn btn-success rounded-btn">
+                                                                            <i class="fas fa-image"></i>
+                                                                        </button>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-lg-4">
-                                                                    <div class="gallery-image-container">
-                                                                        <img src="img/travel-2.jpg" alt="">
-                                                                        <div class="overlay">
-                                                                            <div class="middle">
-                                                                                <button type="button" class="btn btn-primary">
-                                                                                    <i class="fas fa-pen"></i>
-                                                                                </button>
-        
-                                                                                <button type="button" class="btn btn-danger">
-                                                                                    <i class="fas fa-trash-alt"></i>
-                                                                                </button>
-        
-                                                                                <button type="button" class="btn btn-success">
-                                                                                    <i class="fas fa-image"></i>
-                                                                                </button>
-                                                                            </div>
-                                                                        </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="gallery-image-container">
+                                                                <img src="img/travel-2.jpg" alt="">
+                                                                <div class="overlay">
+                                                                    <div class="middle">
+
+                                                                        <button type="button" class="btn btn-danger rounded-btn">
+                                                                            <i class="fas fa-trash-alt"></i>
+                                                                        </button>
+
+                                                                        <button type="button" class="btn btn-success rounded-btn">
+                                                                            <i class="fas fa-image"></i>
+                                                                        </button>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="gallery-image-container">
+                                                                <img src="img/travel-2.jpg" alt="">
+                                                                <div class="overlay">
+                                                                    <div class="middle">
+
+                                                                        <button type="button" class="btn btn-danger rounded-btn">
+                                                                            <i class="fas fa-trash-alt"></i>
+                                                                        </button>
+
+                                                                        <button type="button" class="btn btn-success rounded-btn">
+                                                                            <i class="fas fa-image"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="gallery-image-container">
+                                                                <img src="img/travel-2.jpg" alt="">
+                                                                <div class="overlay">
+                                                                    <div class="middle">
+
+                                                                        <button type="button" class="btn btn-danger rounded-btn">
+                                                                            <i class="fas fa-trash-alt"></i>
+                                                                        </button>
+
+                                                                        <button type="button" class="btn btn-success rounded-btn">
+                                                                            <i class="fas fa-image"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -1618,9 +1908,9 @@
 
 
 
-</div>
+    </div>
 
-   <!-- Add attraction modal -->
+    <!-- Add attraction modal -->
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
@@ -1645,13 +1935,7 @@
                             </div>
 
                             <div class="form-group">
-                                <select class="custom-select" id="inputGroupSelect03" aria-label="Example select with button addon">
-                                    <option selected="">Attraction type</option>
-                                    <option value="1">Hard</option>
-                                    <option value="2">Average</option>
-                                    <option value="3">Normal</option>
-                                    <option value="3">Easy</option>
-                                </select>
+                                <select id="select" name="threads-icon" class="fa-select"></select>
                             </div>
 
                             <div class="form-group">
@@ -1871,7 +2155,8 @@
         </div>
     </div>
     <!-- Delete modal ends -->
-<?php require_once('scripts.php');?>
+    <?php require_once('scripts.php');?>
 
 </body>
+
 </html>

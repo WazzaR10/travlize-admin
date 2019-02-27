@@ -6,7 +6,7 @@
 
 
 
-                <div class="container-fluid">
+                <div class="top-navigation">
                     <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">
                         <i class="fas fa-bars"></i>
                     </a>
